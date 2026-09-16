@@ -37,12 +37,19 @@ export default function SourcesPage() {
       <div className="page-head">
         <h1>Source catalogue</h1>
         <span className="spacer" />
-        {REPO_URL && <a className="btn primary" href={`${REPO_URL}/actions/workflows/update-data.yml`} target="_blank" rel="noreferrer">Refresh data (GitHub Actions) ↗</a>}
+        {REPO_URL && (
+          <a className="btn" href={`${REPO_URL}/actions/workflows/update-data.yml`} target="_blank" rel="noreferrer"
+            title="Opens the “Update data” workflow on GitHub, where repository maintainers can press “Run workflow”">
+            Run update on GitHub (maintainers) ↗
+          </a>
+        )}
       </div>
       <p className="lede">
         Every place the calendar reads from, with the result of its last automatic check ({relTime(ds.generatedAt)}). Sources that cannot be read
-        automatically are listed too, so you can see exactly where the calendar may be incomplete. Data is refreshed by a scheduled job
-        {REPO_URL ? "" : " (run npm run ingest locally)"}.
+        automatically are listed too, so you can see exactly where the calendar may be incomplete.{" "}
+        {REPO_URL
+          ? "Data refreshes automatically four times a day."
+          : "Data refreshes automatically four times a day on GitHub; locally, run npm run ingest."}
       </p>
 
       <div className="stat-tiles">
