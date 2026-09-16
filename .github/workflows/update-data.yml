@@ -1,5 +1,6 @@
 # Scheduled ingestion: re-reads every source, updates data/store.json and the generated JSON,
-# refreshes the source catalogue, and commits the result. The deploy workflow then rebuilds the site.
+# refreshes the source catalogue, and commits the result. The deploy workflow then rebuilds the site
+# (through its workflow_run trigger, since pushes made with GITHUB_TOKEN do not start other workflows).
 name: Update data
 
 on:
@@ -33,7 +34,11 @@ jobs:
         env:
           # Identifies the crawler to the sites we read; set a repository variable to override.
           MATHRADAR_CONTACT: ${{ vars.MATHRADAR_CONTACT || format('https://github.com/{0}', github.repository) }}
-        run: npm run ingest -- ${{ github.event.inputs.sources && format('--source {0}', github.event.inputs.sources) || '' }}
+          SOURCES: ${{ github.event.inputs.sources }}
+        # set -f keeps patterns such as indico-* literal instead of letting the shell expand them.
+        run: |
+          set -f
+          npm run ingest -- ${SOURCES:+--source $SOURCES}
       - name: Regenerate the source catalogue document
         run: npm run catalogue
       - name: Spot-check events against their official pages
@@ -43,5 +48,8 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/store.json docs/SOURCE_CATALOGUE.md
-          git diff --cached --quiet || git commit -m "data: scheduled ingestion $(date -u +%Y-%m-%dT%H:%MZ)"
+          git diff --cached --quiet && exit 0
+          git commit -m "data: scheduled ingestion $(date -u +%Y-%m-%dT%H:%MZ)"
+          # main may have moved during the run (up to 30 min)
+          git pull --rebase
           git push

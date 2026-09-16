@@ -5,6 +5,12 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
+  # Commits pushed by the "Update data" workflow use GITHUB_TOKEN, which does not trigger `push`
+  # workflows, so rebuild explicitly when that workflow finishes.
+  workflow_run:
+    workflows: ["Update data"]
+    types: [completed]
+    branches: [main]
   workflow_dispatch:
 
 permissions:
@@ -18,6 +24,7 @@ concurrency:
 
 jobs:
   build:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
