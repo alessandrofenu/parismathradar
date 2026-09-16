@@ -1,0 +1,42 @@
+{
+  "name": "paris-math-radar",
+  "private": true,
+  "version": "0.2.0",
+  "type": "module",
+  "description": "A mathematical calendar for Paris: seminars, working groups, conferences and news collected from official sources and ranked for your research interests.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "npm run export && vite",
+    "build": "npm run export && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit -p tsconfig.json && tsc --noEmit -p ingest/tsconfig.json",
+    "ingest": "tsx ingest/cli.ts ingest",
+    "news": "tsx ingest/cli.ts news",
+    "reclassify": "tsx ingest/cli.ts reclassify",
+    "verify": "tsx ingest/cli.ts verify",
+    "catalogue": "tsx ingest/cli.ts catalogue -o docs/SOURCE_CATALOGUE.md",
+    "export": "tsx ingest/cli.ts export"
+  },
+  "dependencies": {
+    "@fontsource/inter": "^5.3.0",
+    "@fontsource/jetbrains-mono": "^5.3.0",
+    "@fontsource/source-serif-4": "^5.3.0",
+    "katex": "^0.18.7",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  },
+  "devDependencies": {
+    "@types/katex": "^0.16.8",
+    "@types/node": "^26.5.1",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.1",
+    "cheerio": "^1.2.0",
+    "fast-xml-parser": "^5.11.1",
+    "tsx": "^4.23.13",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.0"
+  }
+}
