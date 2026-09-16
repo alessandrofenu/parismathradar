@@ -1,0 +1,6 @@
+node_modules/
+dist/
+# Generated from data/store.json by `npm run export` (and by the build workflow).
+public/data/
+*.log
+.DS_Store
