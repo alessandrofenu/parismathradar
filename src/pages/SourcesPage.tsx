@@ -37,7 +37,7 @@ export default function SourcesPage() {
       <div className="page-head">
         <h1>Source catalogue</h1>
         <span className="spacer" />
-        {REPO_URL && <a className="btn primary" href={`${REPO_URL}/actions/workflows/update.yml`} target="_blank" rel="noreferrer">Refresh data (GitHub Actions) ↗</a>}
+        {REPO_URL && <a className="btn primary" href={`${REPO_URL}/actions/workflows/update-data.yml`} target="_blank" rel="noreferrer">Refresh data (GitHub Actions) ↗</a>}
       </div>
       <p className="lede">
         Every place the calendar reads from, with the result of its last automatic check ({relTime(ds.generatedAt)}). Sources that cannot be read
