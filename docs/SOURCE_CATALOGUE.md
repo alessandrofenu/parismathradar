@@ -1,6 +1,6 @@
 # Source catalogue — Paris mathematical events
 
-_Generated on 2026-09-18T01:22:21Z (`npm run catalogue`)._
+_Generated on 2026-09-18T09:54:05Z (`npm run catalogue`)._
 
 Reliability scale: official event page / official calendar → **very high**; department page → **high**; mailing list → **medium/high**; third-party aggregator → **medium**.
 Status is the result of the last automatic check (`ok`, `warning`, `error`, `stale` = reachable but not updated, `blocked` = anti-bot wall, `manual` = monitored but not machine-extractable, `never_run`).
@@ -275,7 +275,7 @@ Recurrence, weekday, time and location are only filled when the **official page 
 | Topos pour la réalisabilité | IRIF | — | Dominik Kirst, Umberto Tarantino | https://www.irif.fr/seminaires/topos/index | https://www.irif.fr/_media/ical/topos.ics | — | Friday | 15:00 | Salle 3063 | Fridays 15:00, salle 3063 (as stated on the page) — [source](https://www.irif.fr/seminaires/topos/index) | — | category-theory, logic | 0 | curated |
 | Après-midi de topologie (Paris) | LAGA | Topologie Algébrique (LAGA) and partners | — | https://www.math.univ-paris13.fr/accueil/equipes/ta/seminaire-de-lequipe-ta/ | — | — | — | — | — | — | — | algebraic-topology, homotopy-theory, topology | 0 | curated |
 | Séminaire de l'équipe AGC3 | LAGA | AGC3 | Wolfgang Schmid, Martino Borello | https://www.math.univ-paris13.fr/accueil/equipes/agc3/seminaire-de-lequipe-agc3/ | — | — | — | — | — | — | — | — | 3 | curated |
-| Séminaire de l'équipe Arithmétique et Géométrie Algébrique | LAGA | Arithmétique et Géométrie Algébrique | F. Scavia, M. Tamiozzo | https://www.math.univ-paris13.fr/accueil/equipes/aga/seminaire-de-lequipe-aga/ | — | — | — | — | — | — | — | number-theory, algebraic-geometry | 10 | curated |
+| Séminaire de l'équipe Arithmétique et Géométrie Algébrique | LAGA | Arithmétique et Géométrie Algébrique | F. Scavia, M. Tamiozzo | https://www.math.univ-paris13.fr/accueil/equipes/aga/seminaire-de-lequipe-aga/ | — | — | — | — | — | — | — | number-theory, algebraic-geometry | 9 | curated |
 | Séminaire de l'équipe Mathématiques pour la Biologie et les Images | LAGA | Mathématiques pour la Biologie et les Images | Sarah Kaakai, Frank Alvarez, Madeleine Kubasch | https://www.math.univ-paris13.fr/accueil/equipes/mbi/seminaire-de-lequipe-mbi/ | — | — | — | — | — | — | — | applied | 4 | curated |
 | Séminaire de l'équipe Modélisation et Calcul Scientifique | LAGA | Modélisation et Calcul Scientifique | M. Darbas, E. Audusse | https://www.math.univ-paris13.fr/accueil/equipes/mcs/seminaire-de-lequipe-mcs/ | — | — | — | — | — | — | — | applied | 0 | curated |
 | Séminaire de l'équipe Physique Mathématique & EDP | LAGA | Physique Mathématique & Équations aux Dérivées Partielles | P. Millet, C. Valcu | https://www.math.univ-paris13.fr/accueil/equipes/pm/seminaire-de-lequipe-pm/ | — | — | — | — | — | — | — | mathematical-physics, pde | 0 | curated |
@@ -295,7 +295,7 @@ Recurrence, weekday, time and location are only filled when the **official page 
 | Feed | URL | Kind | Last status | Items | Note |
 |---|---|---|---|---|---|
 | The Abel Prize | https://abelprize.no/rss.xml | prize | ok | 10 | — |
-| arXiv listings (math.AT, math.GT, math.AG, math.CT, math.KT, math.QA, math.CO, math.DS) | https://rss.arxiv.org/rss/math.AT+math.GT+math.AG+math.CT+math.KT+math.QA+math.CO+math.DS | arxiv | ok | 120 | — |
+| arXiv listings (math.AT, math.GT, math.AG, math.CT, math.KT, math.QA, math.CO, math.DS) | https://rss.arxiv.org/rss/math.AT+math.GT+math.AG+math.CT+math.KT+math.QA+math.CO+math.DS | arxiv | ok | 139 | — |
 | CNRS Mathématiques (INSMI) | https://www.insmi.cnrs.fr/fr/rss.xml | institute | stale | 5 | Newest item 2022-09-16 — feed appears unmaintained |
 | IHES — Actualités | https://www.ihes.fr/feed/ | institute | ok | 10 | — |
 | Quanta Magazine — Mathematics | https://www.quantamagazine.org/mathematics/feed/ | news | ok | 5 | — |
