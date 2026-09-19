@@ -1,6 +1,6 @@
 # Source catalogue — Paris mathematical events
 
-_Generated on 2026-09-19T14:32:38Z (`npm run catalogue`)._
+_Generated on 2026-09-19T19:24:54Z (`npm run catalogue`)._
 
 Reliability scale: official event page / official calendar → **very high**; department page → **high**; mailing list → **medium/high**; third-party aggregator → **medium**.
 Status is the result of the last automatic check (`ok`, `warning`, `error`, `stale` = reachable but not updated, `blocked` = anti-bot wall, `manual` = monitored but not machine-extractable, `never_run`).
@@ -38,7 +38,7 @@ Status is the result of the last automatic check (`ok`, `warning`, `error`, `sta
 | IRIF — Logique, automates, algèbre et jeux (`irif-laag`) | IRIF | https://www.irif.fr/seminaires/laag/index | https://www.irif.fr/_media/ical/laag.ics | ICS | every 12 h | very high | stale | 0 | — |
 | IRIF — Séminaire Formath (Formalized Mathematics) (`irif-picube`) | IRIF | https://www.irif.fr/seminaires/picube/index | https://www.irif.fr/_media/ical/picube.ics | ICS | every 12 h | very high | ok | 3 | — |
 | IRIF — Sémantique (`irif-semantique`) | IRIF | https://www.irif.fr/seminaires/semantique/index | https://www.irif.fr/_media/ical/semantique.ics | ICS | every 12 h | very high | ok | 0 | — |
-| IRIF — Topos pour la réalisabilité (`irif-topos`) | IRIF | https://www.irif.fr/seminaires/topos/index | https://www.irif.fr/_media/ical/topos.ics | ICS | every 12 h | very high | ok | 0 | — |
+| IRIF — Topos pour la réalisabilité (`irif-topos`) | IRIF | https://www.irif.fr/seminaires/topos/index | https://www.irif.fr/_media/ical/topos.ics | ICS | every 12 h | very high | ok | 1 | — |
 | IRIF — Théorie des types et son implémentation (`irif-types`) | IRIF | https://www.irif.fr/seminaires/types/index | https://www.irif.fr/_media/ical/types.ics | ICS | every 12 h | very high | ok | 1 | — |
 | Indico CNRS — Université Paris Nord (13) - LAGA (`indico-222`) | LAGA | https://indico.math.cnrs.fr/category/222/ | https://indico.math.cnrs.fr/category/222/events.ics | Indico HTTP export API (JSON) incl. sub-categories | every 6 h | very high | ok | 0 | Sub-category names are used as series names. |
 | LAGA — Séminaire de l'équipe Physique Mathématique & EDP (`laga-gtenl`) | LAGA | https://www.math.univ-paris13.fr/accueil/equipes/pm/seminaire-de-lequipe-pm/ | https://www.math.univ-paris13.fr/applications/seminaires/ical/gtenl.ics | HTML scraping of the seminar database listing (GET upcoming + POST current year) | every 12 h | very high | ok | 0 | The ICS and RSS links on the page exist but have not been regenerated since June 2023 — do not subscribe to them. Speaker homepages are linked by the source. |
@@ -273,7 +273,7 @@ Recurrence, weekday, time and location are only filled when the **official page 
 | Séminaire Formath (Formalized Mathematics) | IRIF | — | — | https://www.irif.fr/seminaires/picube/index | https://www.irif.fr/_media/ical/picube.ics | — | — | — | — | — | — | logic | 3 | curated |
 | Théorie des graphes | IRIF | — | — | https://www.irif.fr/seminaires/adg/index | https://www.irif.fr/_media/ical/adg.ics | — | — | — | — | — | — | combinatorics | 1 | curated |
 | Théorie des types et son implémentation | IRIF | — | — | https://www.irif.fr/seminaires/types/index | https://www.irif.fr/_media/ical/types.ics | — | — | — | — | — | — | logic | 1 | curated |
-| Topos pour la réalisabilité | IRIF | — | Dominik Kirst, Umberto Tarantino | https://www.irif.fr/seminaires/topos/index | https://www.irif.fr/_media/ical/topos.ics | — | Friday | 15:00 | Salle 3063 | Fridays 15:00, salle 3063 (as stated on the page) — [source](https://www.irif.fr/seminaires/topos/index) | — | category-theory, logic | 0 | curated |
+| Topos pour la réalisabilité | IRIF | — | Dominik Kirst, Umberto Tarantino | https://www.irif.fr/seminaires/topos/index | https://www.irif.fr/_media/ical/topos.ics | — | Friday | 15:00 | Salle 3063 | Fridays 15:00, salle 3063 (as stated on the page) — [source](https://www.irif.fr/seminaires/topos/index) | — | category-theory, logic | 1 | curated |
 | Après-midi de topologie (Paris) | LAGA | Topologie Algébrique (LAGA) and partners | — | https://www.math.univ-paris13.fr/accueil/equipes/ta/seminaire-de-lequipe-ta/ | — | — | — | — | — | — | — | algebraic-topology, homotopy-theory, topology | 0 | curated |
 | Séminaire de l'équipe AGC3 | LAGA | AGC3 | Wolfgang Schmid, Martino Borello | https://www.math.univ-paris13.fr/accueil/equipes/agc3/seminaire-de-lequipe-agc3/ | — | — | — | — | — | — | — | — | 3 | curated |
 | Séminaire de l'équipe Arithmétique et Géométrie Algébrique | LAGA | Arithmétique et Géométrie Algébrique | F. Scavia, M. Tamiozzo | https://www.math.univ-paris13.fr/accueil/equipes/aga/seminaire-de-lequipe-aga/ | — | — | — | — | — | — | — | number-theory, algebraic-geometry | 9 | curated |
