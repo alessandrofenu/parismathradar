@@ -1,6 +1,6 @@
 # Source catalogue — Paris mathematical events
 
-_Generated on 2026-09-21T01:14:43Z (`npm run catalogue`)._
+_Generated on 2026-09-21T10:52:09Z (`npm run catalogue`)._
 
 Reliability scale: official event page / official calendar → **very high**; department page → **high**; mailing list → **medium/high**; third-party aggregator → **medium**.
 Status is the result of the last automatic check (`ok`, `warning`, `error`, `stale` = reachable but not updated, `blocked` = anti-bot wall, `manual` = monitored but not machine-extractable, `never_run`).
@@ -16,7 +16,7 @@ Status is the result of the last automatic check (`ok`, `warning`, `error`, `sta
 | Indico CNRS — CERMICS (`indico-773`) | CERMICS | https://indico.math.cnrs.fr/category/773/ | https://indico.math.cnrs.fr/category/773/events.ics | Indico HTTP export API (JSON) incl. sub-categories | every 6 h | very high | ok | 0 | Sub-category names are used as series names. |
 | CMLS (Polytechnique) — Séminaire de géométrie (`cmls-geometrie`) | CMLS | https://cmls.ip-paris.fr/recherche/geometrie-et-dynamique/seminaire-de-geometrie | — | manual (irregular free-text page) | probe daily | high | manual | 0 | Sessions are written as free prose with inconsistent date headers (e.g. a header dated 7 July announcing a session on 24 June); automatic extraction would risk wrong dates. |
 | Indico CNRS — Conservatoire National des Arts et Métiers (`indico-22`) | Cnam | https://indico.math.cnrs.fr/category/22/ | https://indico.math.cnrs.fr/category/22/events.ics | Indico HTTP export API (JSON) incl. sub-categories | every 6 h | very high | ok | 0 | Sub-category names are used as series names. |
-| ENS DMA — events calendar (all seminars) (`ens-dma`) | ENS DMA | https://www.math.ens.psl.eu/la-recherche/seminaires/ | https://www.math.ens.psl.eu/evenements/?ical=1 | JSON REST API (WordPress The Events Calendar: /wp-json/tribe/events/v1/events) | every 6 h | very high | ok | 14 | Structured categories = seminar series. Several ENS series listed as 'archives' publish nothing now. |
+| ENS DMA — events calendar (all seminars) (`ens-dma`) | ENS DMA | https://www.math.ens.psl.eu/la-recherche/seminaires/ | https://www.math.ens.psl.eu/evenements/?ical=1 | JSON REST API (WordPress The Events Calendar: /wp-json/tribe/events/v1/events) | every 6 h | very high | ok | 15 | Structured categories = seminar series. Several ENS series listed as 'archives' publish nothing now. |
 | FSMP — Agenda & actualités (`fsmp-agenda`) | FSMP | https://www.sciencesmaths-paris.fr/fr/actualites | — | catalogued only | — | high | manual | — | Mostly programmes, calls and outreach (e.g. Horizon Maths). |
 | IHES — Events (seminars, cours, conferences) (`ihes-events`) | IHES | https://www.ihes.fr/en/events/ | https://indico.math.cnrs.fr/category/57/ | HTML scraping (event tables link to Indico) | every 12 h | very high | ok | 11 | Every row links to its Indico event, which makes deduplication exact. |
 | Indico CNRS — I.H.E.S (`indico-57`) | IHES | https://indico.math.cnrs.fr/category/57/ | https://indico.math.cnrs.fr/category/57/events.ics | Indico HTTP export API (JSON) incl. sub-categories | every 6 h | very high | ok | 11 | Sub-category names are used as series names. |
@@ -73,7 +73,7 @@ Recurrence, weekday, time and location are only filled when the **official page 
 | Séminaire géométrie et systèmes dynamiques (AGM, Cergy) | AGM (Cergy) | — | — | https://cyagm.cyu.fr/seminaire-geometrie-et-systemes-dynamiques-1 | — | — | — | — | — | — | — | geometry, dynamical-systems | 0 | curated |
 | Séminaire de géométrie (CMLS) | CMLS | Équipe Géométrie et Dynamique | Lorenzo Fantini, Gerard Freixas | https://cmls.ip-paris.fr/recherche/geometrie-et-dynamique/seminaire-de-geometrie | — | — | — | — | — | — | — | geometry, algebraic-geometry | 0 | curated |
 | Colloquium doctorant | ENS DMA | — | — | https://www.math.ens.psl.eu/la-recherche/seminaires/ | — | — | — | — | — | — | — | — | 0 | discovered |
-| CSD seminar | ENS DMA | — | — | https://www.math.ens.psl.eu/la-recherche/seminaires/ | — | — | — | — | — | — | — | — | 0 | discovered |
+| CSD seminar | ENS DMA | — | — | https://www.math.ens.psl.eu/la-recherche/seminaires/ | — | — | — | — | — | — | — | — | 1 | discovered |
 | Séminaire Analyse non linéaire et EDP | ENS DMA | — | — | https://www.math.ens.psl.eu/la-recherche/seminaires/ | — | — | — | — | — | — | — | — | 8 | discovered |
 | Séminaire Automath | ENS DMA | — | — | https://www.math.ens.psl.eu/la-recherche/seminaires/ | — | — | — | — | — | — | — | — | 1 | discovered |
 | Séminaire Des mathématiques | ENS DMA | — | — | https://www.math.ens.psl.eu/la-recherche/seminaires/ | — | — | — | — | — | — | — | — | 5 | discovered |
@@ -108,7 +108,7 @@ Recurrence, weekday, time and location are only filled when the **official page 
 | Rencontres de probabilités intégrables | IHP | — | — | https://www.ihp.fr/fr/seminaires-recurrents-et-groupes-de-travail | — | — | — | — | — | — | — | — | 0 | discovered |
 | Rencontres de probabilités intégrables | IHP | — | — | https://indico.math.cnrs.fr/category/748/ | https://indico.math.cnrs.fr/category/748/events.ics | — | — | — | — | — | — | — | 2 | discovered |
 | Rencontres de théorie analytique des nombres | IHP | — | — | https://www.ihp.fr/fr/seminaires-recurrents-et-groupes-de-travail | — | — | — | — | — | — | — | — | 0 | discovered |
-| Rencontres de théorie analytique des nombres | IHP | — | — | https://indico.math.cnrs.fr/category/578/ | https://indico.math.cnrs.fr/category/578/events.ics | — | — | — | — | — | — | — | 3 | discovered |
+| Rencontres de théorie analytique des nombres | IHP | — | — | https://indico.math.cnrs.fr/category/578/ | https://indico.math.cnrs.fr/category/578/events.ics | — | — | — | — | — | — | — | 2 | discovered |
 | Rencontres de théorie élémentaire et analytique des nombres | IHP | — | — | https://webusers.imj-prg.fr/~jean-paul.allouche/daboussi.html | — | — | Monday | — | Institut Henri Poincaré | Every two months, Mondays (as listed by IHP) — [source](https://www.ihp.fr/fr/seminaires-recurrents-et-groupes-de-travail) | — | number-theory | 0 | discovered |
 | Rencontres Théoriciennes | IHP | — | — | http://semparis.lpthe.jussieu.fr/list?date=6&seriescodes=12 | — | — | Thursday | — | Institut Henri Poincaré | Twice a month, Thursdays (as listed by IHP) — [source](https://www.ihp.fr/fr/seminaires-recurrents-et-groupes-de-travail) | — | mathematical-physics | 0 | discovered |
 | Seed Seminar of Mathematics and Physics | IHP | — | — | https://www.ihp.fr/fr/seminaires-recurrents-et-groupes-de-travail | — | — | — | — | — | — | — | — | 1 | discovered |
@@ -215,7 +215,7 @@ Recurrence, weekday, time and location are only filled when the **official page 
 | Séminaire d'Analyse et Géométrie | IMJ-PRG | — | O. Biquard, I. Itenberg, S. Shen, T.-D. Tô | https://www.imj-prg.fr/gestion/evenement/affEvenement/56 | — | — | — | — | Jussieu, 15–25.502 | — | — | — | 0 | discovered |
 | Séminaire d'Analyse Fonctionnelle | IMJ-PRG | Analyse Fonctionnelle | E. Abakoumov - A.Eskenazis - D. Cordero-Erausquin - M. Fathi - O. Guédon - B. Maurey | https://www.imj-prg.fr/gestion/evenement/affEvenement/60 | — | — | Thursday | 10:30 | Campus Pierre et Marie Curie, salle 13 - couloir 15-16 - 4ème étage | Thursdays 10:30 (stated in the series description) — [source](https://www.imj-prg.fr/gestion/evenement/affEvenement/60) | — | analysis | 0 | discovered |
 | Séminaire d'initiation à l'Analyse | IMJ-PRG | Analyse Fonctionnelle | G. Godefroy - M. Rogalski - J. Saint-Raymond | https://www.imj-prg.fr/gestion/evenement/affEvenement/64 | — | — | Thursday | 14:00 | Campus Pierre et Marie Curie, salle 13 - couloir 15-16 - 4ème étage | Thursdays 14:00 (stated in the series description) — [source](https://www.imj-prg.fr/gestion/evenement/affEvenement/64) | — | analysis | 0 | discovered |
-| Séminaire de Géométrie | IMJ-PRG | Géométrie et Dynamique | G. Franz, L. Hauswirth, P. Laurain, R. Petrides, R. Souam | https://www.imj-prg.fr/gestion/evenement/affEvenement/47 | — | — | — | — | Sophie Germain, 1013 | — | yes | geometry, dynamical-systems | 10 | discovered |
+| Séminaire de Géométrie | IMJ-PRG | Géométrie et Dynamique | G. Franz, L. Hauswirth, P. Laurain, R. Petrides, R. Souam | https://www.imj-prg.fr/gestion/evenement/affEvenement/47 | — | — | — | — | Sophie Germain, 1013 | — | yes | geometry, dynamical-systems | 9 | discovered |
 | Séminaire de géométrie algébrique | IMJ-PRG | Topologie et Géométrie Algébriques | — | https://www.imj-prg.fr/gestion/evenement/affEvenement/45 | — | — | Thursday | 14:00 | http://www.imj-prg.fr/tga/sem-ga | Thursdays 14:00 (stated in the series description) — [source](https://www.imj-prg.fr/gestion/evenement/affEvenement/45) | — | — | 0 | discovered |
 | Séminaire de géométrie et physique mathématique | IMJ-PRG | Géométrie et Dynamique | S. Barannikov, D. Bennequin, F. Hélein, J. Kouneiher, V. Roubtsov. | https://www.imj-prg.fr/gestion/evenement/affEvenement/62 | — | — | — | — | Sophie Germain, salle 2018 | — | — | geometry, dynamical-systems | 0 | discovered |
 | Séminaire de Géométrie Hamiltonienne | IMJ-PRG | Analyse Algébrique; Géométrie et Dynamique | Marie-Claude Arnaud, Marc Chaperon, Maylis Irigoyen, Laurent Lazzarini, Jean-Pierre Marco. | https://www.imj-prg.fr/gestion/evenement/affEvenement/54 | — | — | — | — | Campus Pierre et Marie Curie, salle 1525-502 | — | — | algebraic-geometry, geometry, dynamical-systems | 0 | discovered |
@@ -297,7 +297,7 @@ Recurrence, weekday, time and location are only filled when the **official page 
 | Feed | URL | Kind | Last status | Items | Note |
 |---|---|---|---|---|---|
 | The Abel Prize | https://abelprize.no/rss.xml | prize | ok | 10 | — |
-| arXiv listings (math.AT, math.GT, math.AG, math.CT, math.KT, math.QA, math.CO, math.DS) | https://rss.arxiv.org/rss/math.AT+math.GT+math.AG+math.CT+math.KT+math.QA+math.CO+math.DS | arxiv | warning | 0 | No new/cross-listed entries (weekend or holiday listing?) |
+| arXiv listings (math.AT, math.GT, math.AG, math.CT, math.KT, math.QA, math.CO, math.DS) | https://rss.arxiv.org/rss/math.AT+math.GT+math.AG+math.CT+math.KT+math.QA+math.CO+math.DS | arxiv | ok | 91 | — |
 | CNRS Mathématiques (INSMI) | https://www.insmi.cnrs.fr/fr/rss.xml | institute | stale | 5 | Newest item 2022-09-16 — feed appears unmaintained |
 | IHES — Actualités | https://www.ihes.fr/feed/ | institute | ok | 10 | — |
 | Quanta Magazine — Mathematics | https://www.quantamagazine.org/mathematics/feed/ | news | ok | 5 | — |
