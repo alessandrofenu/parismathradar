@@ -97,7 +97,7 @@ Only the scheduled ingestion needs Node.
 ingest/                     Node/TypeScript ingestion (runs in CI or locally)
   catalogue.ts              institutions, sources, curated series (verified statements only)
   adapters/                 one adapter per source family
-    imj.ts ens.ts indico.ts ical.ts laga.ts ihp.ts ihes.ts imo.ts probe.ts
+    imj.ts ens.ts indico.ts ical.ts laga.ts ihp.ts ihes.ts imo.ts cergy.ts m2fonda.ts probe.ts
   pipeline.ts               normalise → dedupe/merge → classify → store; change & stale detection
   store.ts                  data/store.json (state) + public/data/*.json (published)
   news.ts                   arXiv + RSS ingestion
@@ -223,5 +223,3 @@ rule: **never write a field a source does not state.**
 
 Licence: [MIT](LICENSE). Event data belongs to the institutions listed in the source catalogue; every event
 keeps a link to its official page.
-# parismathradar
-# parismathradar

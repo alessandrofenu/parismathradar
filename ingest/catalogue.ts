@@ -45,6 +45,8 @@ export const INSTITUTIONS: InstitutionData[] = [
   I("polytechnique", "École polytechnique", "Polytechnique", "school", "IP Paris", "https://www.polytechnique.edu"),
   I("paris-saclay", "Université Paris-Saclay", "Paris-Saclay", "university", "", "https://www.universite-paris-saclay.fr"),
   I("sorbonne-universite", "Sorbonne Université", "Sorbonne U.", "university", "", "https://www.sorbonne-universite.fr"),
+  I("m2-fonda", "M2 Mathématiques fondamentales (Paris Centre)", "M2 Maths fonda", "programme", "Sorbonne Université, Université Paris Cité, Université Sorbonne Paris Nord",
+    "https://master-math-fonda.imj-prg.fr", "Joint research-oriented M2; its student working groups can validate a 3-ECTS UE."),
   I("fsmp", "Fondation Sciences Mathématiques de Paris", "FSMP", "foundation", "", "https://www.sciencesmaths-paris.fr"),
 ];
 
@@ -146,7 +148,15 @@ export const SOURCES: SourceDef[] = [
   S({ id: "agm-seminaires", name: "AGM (Cergy) — Séminaires", institution_id: "agm", adapter: "probe",
     params: { expect: "fresh", urls: ["https://cyagm.cyu.fr/seminaire-geometrie-et-systemes-dynamiques-1", "https://cyagm.cyu.fr/seminaires-agm"] },
     url: "https://cyagm.cyu.fr/seminaires-agm", reliability: "high", update_frequency: "probe daily", extraction_method: "HTML (probe only)",
-    notes: "In Sept. 2026 the seminar pages only showed 2024 sessions; the RSS export is empty. Cergy events published on Indico (category 331) are still ingested." }),
+    notes: "In Sept. 2026 the seminar pages only showed 2024 sessions; the RSS export is empty. The geometry & dynamics seminar is read from its organiser's page (source cergy-geodyn); Cergy events published on Indico (category 331) are still ingested." }),
+  S({ id: "cergy-geodyn", name: "Séminaire de Géométrie et Dynamique de Cergy-Pontoise (organisers' page)", institution_id: "agm", adapter: "cergy_geodyn",
+    params: { series_id: "agm-gsd" }, url: "https://louisioos.github.io/liens.html", reliability: "high", update_frequency: "every 12 h",
+    extraction_method: "HTML scraping (hand-written programme: upcoming + past sessions with abstracts)",
+    notes: "Maintained by an organiser (Louis Ioos). Time and room come from the weekly slot stated at the top of the page and are applied only to sessions on that weekday. Also links the AGM thematic days (journées isomonodromie, journées d'écheveaux), which are one-off and not ingested." }),
+  S({ id: "m2fonda-gt", name: "M2 Mathématiques fondamentales — Groupes de travail", institution_id: "m2-fonda", adapter: "m2fonda",
+    url: "https://master-math-fonda.imj-prg.fr/gt.html", reliability: "high", update_frequency: "daily",
+    extraction_method: "HTML scraping (series discovery from the list of presentation PDFs)",
+    notes: "Student working groups of the M2 (SU / UPC / USPN). Each group is a one-page PDF; sessions are organised among students by email/Discord and never published with dates, so only series are listed." }),
   S({ id: "lpsm-seminaires", name: "LPSM — Séminaires", institution_id: "lpsm", adapter: "probe", params: { expect: "fresh" },
     url: "https://www.lpsm.paris/seminaires/", reliability: "high", update_frequency: "probe daily", extraction_method: "blocked (anti-bot challenge)",
     notes: "Protected by an 'Anubis' proof-of-work bot wall; would need a headless browser." }),
@@ -183,6 +193,33 @@ export const SOURCES: SourceDef[] = [
     extraction_method: "HTML scraping of the seminar database listing (GET upcoming + POST current year)",
     notes: "The ICS and RSS links on the page exist but have not been regenerated since June 2023 — do not subscribe to them. Speaker homepages are linked by the source.",
   })),
+];
+
+// M2 Mathématiques fondamentales working groups (https://master-math-fonda.imj-prg.fr/gt.html), 2025–26 list.
+// [PDF file name, name, topics, contacts as printed in the PDF, statements read in the PDF]
+export const M2_GROUPS: [string, string, string[], string | null, Partial<RawSeries>][] = [
+  ["dag", "GT M2 — Géométrie dérivée (DAG Jussieu working group)", ["derived-geometry", "higher-categories", "higher-algebra", "homotopy-theory"],
+    "Marine Cases", { description: "Goal: postnikov towers of connective E∞-rings are square-zero extensions (Lurie, Higher Algebra 7.4.1.28). Weekly programme started 2 Oct 2025 (∞-categories, stable ∞-categories, E∞-rings, cotangent complex)." }],
+  ["K", "GT M2 — K-théorie (groupe de lecture)", ["k-theory", "algebra", "homological-algebra"], null,
+    { description: "Algebraic K-theory following Srinivas: K0, K1, K2, then higher K-groups via the plus and Q constructions (Oct. 2025)." }],
+  ["hyper", "GT M2 — Géométrie hyperkählérienne", ["differential-geometry", "algebraic-geometry", "geometry"], "Alexis Roëckel",
+    { description: "Holonomy and Berger's classification, Calabi–Yau, variations of Hodge structure, period map and global Torelli (Oct. 2025)." }],
+  ["mmp", "GT M2 — Programme minimal", ["algebraic-geometry", "moduli-spaces"], "Bojin Han", { description: "Minimal model program; call for speakers (2025–26)." }],
+  ["groups", "GT M2 — Groupes et courbure", ["geometric-group-theory", "differential-geometry", "group-theory"], "Achille de Ridder, Eliot Martin",
+    { description: "Curvature and fundamental groups (Bonnet, Cartan–Hadamard, Preissmann, Milnor), then hyperbolic groups (Oct. 2025)." }],
+  ["Langlands", "GT M2 — Langlands p-adique en dimension deux", ["number-theory", "representation-theory", "arithmetic-geometry"], "Jiantao Tan",
+    { typical_weekday: "Tuesday", typical_time: "16:40–18:40", typical_location: "Jussieu 15-16-101", location_id: "jussieu",
+      recurrence: "Tuesdays 16:40–18:40, Jussieu 15-16-101 (as stated in the PDF of 4 Nov. 2025)",
+      statement_source: "https://master-math-fonda.imj-prg.fr/gt/Langlands.pdf",
+      description: "p-adic Langlands for GL2(Qp): (φ,Γ)-modules, Fontaine rings, following Astérisque 319/330/331." }],
+  ["RH", "GT M2 — Correspondance de Riemann-Hilbert", ["algebraic-geometry", "geometry"], "Ugo Fialho",
+    { description: "Flat connections, local systems and representations of π1; Gauss–Manin connection; then regular singularities or D-modules (Nov. 2025)." }],
+  ["DGT", "GT M2 — Géométrie différentielle non lisse et applications", ["differential-geometry", "analysis"], "Pavel Martynyuk, Egor Surkov",
+    { description: "Optimal transport, metric measure spaces, CD/RCD conditions and stability under lower Ricci bounds (Jan. 2026)." }],
+  ["combi", "GT M2 — Combinatoire et entropie", ["combinatorics", "probability"], "Antoine Roullet",
+    { description: "Entropy methods in additive combinatorics (Green–Manners–Tao, Hochman), Jan.–Feb. 2026." }],
+  ["Shen", "Sujet proposé — Faisceaux cohérents et super-connexions", ["algebraic-geometry", "differential-geometry", "homological-algebra"], "Shu Shen",
+    { description: "Topic proposed by Shu Shen (not yet organised): coherent sheaves, derived categories, antiholomorphic superconnections and Block's equivalence (Bismut–Shen–Wei)." }],
 ];
 
 export const SERIES: RawSeries[] = [
@@ -227,9 +264,12 @@ export const SERIES: RawSeries[] = [
   { id: "cmls-geometrie", name: "Séminaire de géométrie (CMLS)", institution_id: "cmls", source_id: "cmls-geometrie", department: "Équipe Géométrie et Dynamique",
     organizers: "Lorenzo Fantini, Gerard Freixas", official_url: "https://cmls.ip-paris.fr/recherche/geometrie-et-dynamique/seminaire-de-geometrie",
     location_id: "polytechnique", has_archive: true, kind: "seminar", level: "research", topics: ["geometry", "algebraic-geometry"] },
-  { id: "agm-gsd", name: "Séminaire géométrie et systèmes dynamiques (AGM, Cergy)", institution_id: "agm", source_id: "agm-seminaires",
-    official_url: "https://cyagm.cyu.fr/seminaire-geometrie-et-systemes-dynamiques-1", location_id: "cergy", has_archive: true, kind: "seminar",
-    level: "research", topics: ["geometry", "dynamical-systems"], description: "Official page lists sessions up to 2024 only (checked Sept. 2026)." },
+  { id: "agm-gsd", name: "Séminaire de Géométrie et Dynamique de Cergy-Pontoise", institution_id: "agm", source_id: "cergy-geodyn",
+    organizers: "Bertrand Deroin, Louis Ioos, Jules Martel", official_url: "https://louisioos.github.io/liens.html", location_id: "cergy",
+    typical_location: "Salle 5.54, bâtiment E, site Saint-Martin (laboratoire AGM), 2 av. Adolphe Chauvin, Pontoise", has_archive: true,
+    published_in_advance: "yes", kind: "seminar", level: "research", topics: ["geometry", "dynamical-systems", "topology"],
+    description: "Programme with abstracts kept on an organiser's page (the AGM site's own page for this seminar lists sessions up to 2024 only). Recent talks range over quantum invariants, skein theory, Thompson groups and pseudo-Riemannian geometry.",
+    statement_source: "https://louisioos.github.io/liens.html" },
   { id: "agm-edp", name: "Séminaire Analyse et EDP (AGM, Cergy)", institution_id: "agm", source_id: "agm-seminaires",
     official_url: "https://cyagm.cyu.fr/seminaires-agm", location_id: "cergy", has_archive: true, kind: "seminar", level: "research",
     topics: ["analysis", "pde"], description: "Official page lists sessions up to 2024 only (checked Sept. 2026)." },
@@ -237,6 +277,11 @@ export const SERIES: RawSeries[] = [
     source_id: "laga-sta", official_url: "https://www.math.univ-paris13.fr/accueil/equipes/ta/seminaire-de-lequipe-ta/", kind: "conference",
     level: "research", topics: ["algebraic-topology", "homotopy-theory", "topology"], has_archive: true,
     description: "Afternoons of several topology talks announced in the LAGA topology seminar listing, e.g. « Après-midi parisienne de topologie » (8 Jan 2026, LAGA) and « Après-midi topologie algébrique » (26 Mar 2026, Sophie Germain). Dates are irregular: no recurrence is claimed. Announcements also circulate on the sem-top.paris mailing list." },
+  ...M2_GROUPS.map(([key, name, topics, organizers, extra]): RawSeries => ({
+    id: `m2fonda-gt-${key.toLowerCase()}`, name, institution_id: "m2-fonda", department: "M2 Mathématiques fondamentales", source_id: "m2fonda-gt",
+    official_url: `https://master-math-fonda.imj-prg.fr/gt/${key}.pdf`,
+    organizers, kind: "working_group", level: "master", topics, has_archive: false, ...extra,
+  })),
   ...IRIF_SEMINARS.filter(([code]) => !["cat", "hott", "topos"].includes(code)).map(([code, name, topics, kind]): RawSeries => ({
     id: `irif-${code}`, name, institution_id: "irif", source_id: `irif-${code}`, official_url: `https://www.irif.fr/seminaires/${code}/index`,
     calendar_url: `https://www.irif.fr/_media/ical/${code}.ics`, location_id: "sophie-germain", kind, level: "research", topics, has_archive: true,
