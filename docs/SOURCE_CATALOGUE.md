@@ -1,6 +1,6 @@
 # Source catalogue — Paris mathematical events
 
-_Generated on 2026-09-23T01:35:49Z (`npm run catalogue`)._
+_Generated on 2026-09-23T10:07:36Z (`npm run catalogue`)._
 
 Reliability scale: official event page / official calendar → **very high**; department page → **high**; mailing list → **medium/high**; third-party aggregator → **medium**.
 Status is the result of the last automatic check (`ok`, `warning`, `error`, `stale` = reachable but not updated, `blocked` = anti-bot wall, `manual` = monitored but not machine-extractable, `never_run`).
@@ -19,7 +19,7 @@ Status is the result of the last automatic check (`ok`, `warning`, `error`, `sta
 | ENS DMA — events calendar (all seminars) (`ens-dma`) | ENS DMA | https://www.math.ens.psl.eu/la-recherche/seminaires/ | https://www.math.ens.psl.eu/evenements/?ical=1 | JSON REST API (WordPress The Events Calendar: /wp-json/tribe/events/v1/events) | every 6 h | very high | ok | 15 | Structured categories = seminar series. Several ENS series listed as 'archives' publish nothing now. |
 | FSMP — Agenda & actualités (`fsmp-agenda`) | FSMP | https://www.sciencesmaths-paris.fr/fr/actualites | — | catalogued only | — | high | manual | — | Mostly programmes, calls and outreach (e.g. Horizon Maths). |
 | IHES — Events (seminars, cours, conferences) (`ihes-events`) | IHES | https://www.ihes.fr/en/events/ | https://indico.math.cnrs.fr/category/57/ | HTML scraping (event tables link to Indico) | every 12 h | very high | ok | 11 | Every row links to its Indico event, which makes deduplication exact. |
-| Indico CNRS — I.H.E.S (`indico-57`) | IHES | https://indico.math.cnrs.fr/category/57/ | https://indico.math.cnrs.fr/category/57/events.ics | Indico HTTP export API (JSON) incl. sub-categories | every 6 h | very high | ok | 11 | Sub-category names are used as series names. |
+| Indico CNRS — I.H.E.S (`indico-57`) | IHES | https://indico.math.cnrs.fr/category/57/ | https://indico.math.cnrs.fr/category/57/events.ics | Indico HTTP export API (JSON) incl. sub-categories | every 6 h | very high | ok | 12 | Sub-category names are used as series names. |
 | IHP — Agenda (`ihp-agenda`) | IHP | https://www.ihp.fr/fr/agenda | — | HTML scraping of paginated agenda (/fr/agenda?page=N) | every 12 h | very high | ok | 71 | agenda.xml returns HTTP 500. Also lists events of IHP partners held outside Paris (e.g. Cargèse) — flagged as outside the region. Most IHP talks are also on Indico (deduplicated). |
 | IHP — Recurring seminars & working groups (catalogue page) (`ihp-recurrent`) | IHP | https://www.ihp.fr/fr/seminaires-recurrents-et-groupes-de-travail | — | HTML scraping (series discovery: name, frequency, weekday, link) | weekly | high | ok | 0 | Discovers inter-university series hosted at IHP; talks come from their own sources. |
 | Indico CNRS — Institut Henri Poincaré (`indico-107`) | IHP | https://indico.math.cnrs.fr/category/107/ | https://indico.math.cnrs.fr/category/107/events.ics | Indico HTTP export API (JSON) incl. sub-categories | every 6 h | very high | ok | 103 | Sub-category names are used as series names. |
@@ -31,7 +31,7 @@ Status is the result of the last automatic check (`ok`, `warning`, `error`, `sta
 | Institut de Mathématique d'Orsay — Séminaires et événements (`imo-orsay`) | IMO / LMO | https://www.imo.universite-paris-saclay.fr/fr/activites/les-evenements-de-limo/ | — | HTML scraping (list cards + event detail pages) | every 12 h | very high | ok | 29 | Orsay plateau: count ~1 h from central Paris. |
 | IRIF — Théorie des graphes (`irif-adg`) | IRIF | https://www.irif.fr/seminaires/adg/index | https://www.irif.fr/_media/ical/adg.ics | ICS | every 12 h | very high | ok | 0 | — |
 | IRIF — Catégories supérieures, polygraphes et homotopie (`irif-cat`) | IRIF | https://www.irif.fr/seminaires/cat/index | https://www.irif.fr/_media/ical/cat.ics | ICS | every 12 h | very high | ok | 0 | — |
-| IRIF — Combinatoire énumérative et analytique (`irif-combi`) | IRIF | https://www.irif.fr/seminaires/combi/index | https://www.irif.fr/_media/ical/combi.ics | ICS | every 12 h | very high | ok | 1 | — |
+| IRIF — Combinatoire énumérative et analytique (`irif-combi`) | IRIF | https://www.irif.fr/seminaires/combi/index | https://www.irif.fr/_media/ical/combi.ics | ICS | every 12 h | very high | ok | 2 | — |
 | IRIF — Graphes et Logique (`irif-gel`) | IRIF | https://www.irif.fr/seminaires/gel/index | https://www.irif.fr/_media/ical/gel.ics | ICS | every 12 h | very high | stale | 0 | — |
 | IRIF — La théorie des types et la théorie de l'homotopie (`irif-hott`) | IRIF | https://www.irif.fr/seminaires/hott/index | https://www.irif.fr/_media/ical/hott.ics | ICS | every 12 h | very high | stale | 0 | — |
 | IRIF — IRIF Distinguished Talks Series (`irif-irif`) | IRIF | https://www.irif.fr/seminaires/irif/index | https://www.irif.fr/_media/ical/irif.ics | ICS | every 12 h | very high | ok | 0 | — |
@@ -84,7 +84,7 @@ Recurrence, weekday, time and location are only filled when the **official page 
 | Séminaire de Mathématique | IHES | — | — | https://www.ihes.fr/en/events/ | — | — | — | — | — | — | — | — | 0 | discovered |
 | Séminaire de Mathématique | IHES | — | — | https://indico.math.cnrs.fr/category/72/ | https://indico.math.cnrs.fr/category/72/events.ics | — | — | — | — | — | — | — | 2 | discovered |
 | Séminaire de Physique Théorique | IHES | — | — | https://www.ihes.fr/en/events/ | — | — | — | — | — | — | — | — | 0 | discovered |
-| Séminaire de Physique Théorique | IHES | — | — | https://indico.math.cnrs.fr/category/71/ | https://indico.math.cnrs.fr/category/71/events.ics | — | — | — | — | — | — | — | 2 | discovered |
+| Séminaire de Physique Théorique | IHES | — | — | https://indico.math.cnrs.fr/category/71/ | https://indico.math.cnrs.fr/category/71/events.ics | — | — | — | — | — | — | — | 3 | discovered |
 | Séminaire Géométrie et groupes discrets | IHES | — | — | https://www.ihes.fr/en/events/ | — | — | — | — | — | — | — | — | 0 | discovered |
 | Séminaire Géométrie et groupes discrets | IHES | — | — | https://indico.math.cnrs.fr/category/240/ | https://indico.math.cnrs.fr/category/240/events.ics | — | — | — | — | — | — | — | 2 | discovered |
 | 2026-T3 Operator Algebras: Approximation, Rigidity and Dynamics | IHP | — | — | https://indico.math.cnrs.fr/category/784/ | https://indico.math.cnrs.fr/category/784/events.ics | — | — | — | — | — | — | — | 3 | discovered |
@@ -265,7 +265,7 @@ Recurrence, weekday, time and location are only filled when the **official page 
 | Séminaire Géométrie Topologie Dynamique (Orsay) | IMO / LMO | — | — | https://www.imo.universite-paris-saclay.fr/fr/activites/les-evenements-de-limo/ | — | — | — | — | — | — | — | — | 2 | discovered |
 | Séminaire Probabilités et Statistiques (Orsay) | IMO / LMO | — | — | https://www.imo.universite-paris-saclay.fr/fr/activites/les-evenements-de-limo/ | — | — | — | — | — | — | — | — | 1 | discovered |
 | Catégories supérieures, polygraphes et homotopie | IRIF | Pôle Preuves, programmes et systèmes | Sylvain Douteau, François Métayer | https://www.irif.fr/seminaires/cat/index | https://www.irif.fr/_media/ical/cat.ics | — | Friday | 14:00 | Salle 1013 | Fridays 14:00, salle 1013 (as stated on the page: « Le vendredi à 14h, salle 1013 ») — [source](https://www.irif.fr/seminaires/cat/index) | — | higher-categories, homotopy-theory, category-theory | 0 | curated |
-| Combinatoire énumérative et analytique | IRIF | — | — | https://www.irif.fr/seminaires/combi/index | https://www.irif.fr/_media/ical/combi.ics | — | — | — | — | — | — | combinatorics | 1 | curated |
+| Combinatoire énumérative et analytique | IRIF | — | — | https://www.irif.fr/seminaires/combi/index | https://www.irif.fr/_media/ical/combi.ics | — | — | — | — | — | — | combinatorics | 2 | curated |
 | Graphes et Logique | IRIF | — | — | https://www.irif.fr/seminaires/gel/index | https://www.irif.fr/_media/ical/gel.ics | — | — | — | — | — | — | logic, combinatorics | 0 | curated |
 | IRIF Distinguished Talks Series | IRIF | — | — | https://www.irif.fr/seminaires/irif/index | https://www.irif.fr/_media/ical/irif.ics | — | — | — | — | — | — | general | 0 | curated |
 | La théorie des types et la théorie de l'homotopie | IRIF | — | Sylvain Douteau | https://www.irif.fr/seminaires/hott/index | https://www.irif.fr/_media/ical/hott.ics | — | Friday | 14:00 | Salle 1013 | Fridays 14:00, salle 1013 (as stated on the page; last listed sessions in 2024) — [source](https://www.irif.fr/seminaires/hott/index) | — | homotopy-theory, logic, category-theory | 0 | curated |
@@ -297,7 +297,7 @@ Recurrence, weekday, time and location are only filled when the **official page 
 | Feed | URL | Kind | Last status | Items | Note |
 |---|---|---|---|---|---|
 | The Abel Prize | https://abelprize.no/rss.xml | prize | ok | 10 | — |
-| arXiv listings (math.AT, math.GT, math.AG, math.CT, math.KT, math.QA, math.CO, math.DS) | https://rss.arxiv.org/rss/math.AT+math.GT+math.AG+math.CT+math.KT+math.QA+math.CO+math.DS | arxiv | ok | 230 | — |
+| arXiv listings (math.AT, math.GT, math.AG, math.CT, math.KT, math.QA, math.CO, math.DS) | https://rss.arxiv.org/rss/math.AT+math.GT+math.AG+math.CT+math.KT+math.QA+math.CO+math.DS | arxiv | ok | 157 | — |
 | CNRS Mathématiques (INSMI) | https://www.insmi.cnrs.fr/fr/rss.xml | institute | stale | 5 | Newest item 2022-09-16 — feed appears unmaintained |
 | IHES — Actualités | https://www.ihes.fr/feed/ | institute | ok | 10 | — |
 | Quanta Magazine — Mathematics | https://www.quantamagazine.org/mathematics/feed/ | news | ok | 5 | — |
