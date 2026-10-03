@@ -1,6 +1,6 @@
 # Source catalogue — Paris mathematical events
 
-_Generated on 2026-10-02T21:25:01Z (`npm run catalogue`)._
+_Generated on 2026-10-03T02:07:51Z (`npm run catalogue`)._
 
 Reliability scale: official event page / official calendar → **very high**; department page → **high**; mailing list → **medium/high**; third-party aggregator → **medium**.
 Status is the result of the last automatic check (`ok`, `warning`, `error`, `stale` = reachable but not updated, `blocked` = anti-bot wall, `manual` = monitored but not machine-extractable, `never_run`).
