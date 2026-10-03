@@ -1,6 +1,6 @@
 # Source catalogue — Paris mathematical events
 
-_Generated on 2026-10-03T15:13:27Z (`npm run catalogue`)._
+_Generated on 2026-10-03T20:02:14Z (`npm run catalogue`)._
 
 Reliability scale: official event page / official calendar → **very high**; department page → **high**; mailing list → **medium/high**; third-party aggregator → **medium**.
 Status is the result of the last automatic check (`ok`, `warning`, `error`, `stale` = reachable but not updated, `blocked` = anti-bot wall, `manual` = monitored but not machine-extractable, `never_run`).
@@ -135,7 +135,7 @@ Recurrence, weekday, time and location are only filled when the **official page 
 | Séminaire de Combinatoire Philippe Flajolet | IHP | — | — | http://semflajolet.math.cnrs.fr/ | — | — | Thursday | — | Institut Henri Poincaré | Every two months, Thursdays (as listed by IHP) — [source](https://www.ihp.fr/fr/seminaires-recurrents-et-groupes-de-travail) | — | combinatorics | 0 | discovered |
 | Séminaire de cryptofinance de Paris | IHP | — | — | https://webusers.imj-prg.fr/~ricardo.perez-marco/blockchain/blockchain.html | — | — | Thursday | — | Institut Henri Poincaré | Monthly, Thursdays (as listed by IHP) — [source](https://www.ihp.fr/fr/seminaires-recurrents-et-groupes-de-travail) | — | applied | 0 | discovered |
 | Séminaire dérivé | IHP | — | — | https://indico.math.cnrs.fr/category/808/ | — | — | Friday | — | Institut Henri Poincaré | Monthly, Fridays (as listed by IHP) — [source](https://www.ihp.fr/fr/seminaires-recurrents-et-groupes-de-travail) | — | derived-geometry | 0 | discovered |
-| Séminaire des doctorants de FiME | IHP | — | — | https://indico.math.cnrs.fr/category/642/ | https://indico.math.cnrs.fr/category/642/events.ics | — | — | — | — | — | — | — | 4 | discovered |
+| Séminaire des doctorants de FiME | IHP | — | — | https://indico.math.cnrs.fr/category/642/ | https://indico.math.cnrs.fr/category/642/events.ics | — | — | — | — | — | — | — | 5 | discovered |
 | Séminaire des doctorants de FIME | IHP | — | — | https://www.ihp.fr/fr/seminaires-recurrents-et-groupes-de-travail | — | — | — | — | — | — | — | — | 1 | discovered |
 | Séminaire des doctorants FiME | IHP | — | — | https://indico.math.cnrs.fr/category/642/ | — | — | Friday | — | Institut Henri Poincaré | Twice a month, Fridays (as listed by IHP) — [source](https://www.ihp.fr/fr/seminaires-recurrents-et-groupes-de-travail) | — | applied | 0 | discovered |
 | Séminaire Équations différentielles motiviques et au–delà | IHP | — | — | https://indico.math.cnrs.fr/category/603/ | — | — | Friday | — | Institut Henri Poincaré | Monthly, Fridays (as listed by IHP) — [source](https://www.ihp.fr/fr/seminaires-recurrents-et-groupes-de-travail) | — | — | 0 | discovered |
