@@ -1,6 +1,6 @@
 # Source catalogue — Paris mathematical events
 
-_Generated on 2026-10-07T02:31:15Z (`npm run catalogue`)._
+_Generated on 2026-10-07T11:54:14Z (`npm run catalogue`)._
 
 Reliability scale: official event page / official calendar → **very high**; department page → **high**; mailing list → **medium/high**; third-party aggregator → **medium**.
 Status is the result of the last automatic check (`ok`, `warning`, `error`, `stale` = reachable but not updated, `blocked` = anti-bot wall, `manual` = monitored but not machine-extractable, `never_run`).
@@ -21,7 +21,7 @@ Status is the result of the last automatic check (`ok`, `warning`, `error`, `sta
 | FSMP — Agenda & actualités (`fsmp-agenda`) | FSMP | https://www.sciencesmaths-paris.fr/fr/actualites | — | catalogued only | — | high | manual | — | Mostly programmes, calls and outreach (e.g. Horizon Maths). |
 | IHES — Events (seminars, cours, conferences) (`ihes-events`) | IHES | https://www.ihes.fr/en/events/ | https://indico.math.cnrs.fr/category/57/ | HTML scraping (event tables link to Indico) | every 12 h | very high | ok | 12 | Every row links to its Indico event, which makes deduplication exact. |
 | Indico CNRS — I.H.E.S (`indico-57`) | IHES | https://indico.math.cnrs.fr/category/57/ | https://indico.math.cnrs.fr/category/57/events.ics | Indico HTTP export API (JSON) incl. sub-categories | every 6 h | very high | ok | 15 | Sub-category names are used as series names. |
-| IHP — Agenda (`ihp-agenda`) | IHP | https://www.ihp.fr/fr/agenda | — | HTML scraping of paginated agenda (/fr/agenda?page=N) | every 12 h | very high | ok | 68 | agenda.xml returns HTTP 500. Also lists events of IHP partners held outside Paris (e.g. Cargèse) — flagged as outside the region. Most IHP talks are also on Indico (deduplicated). |
+| IHP — Agenda (`ihp-agenda`) | IHP | https://www.ihp.fr/fr/agenda | — | HTML scraping of paginated agenda (/fr/agenda?page=N) | every 12 h | very high | ok | 67 | agenda.xml returns HTTP 500. Also lists events of IHP partners held outside Paris (e.g. Cargèse) — flagged as outside the region. Most IHP talks are also on Indico (deduplicated). |
 | IHP — Recurring seminars & working groups (catalogue page) (`ihp-recurrent`) | IHP | https://www.ihp.fr/fr/seminaires-recurrents-et-groupes-de-travail | — | HTML scraping (series discovery: name, frequency, weekday, link) | weekly | high | ok | 0 | Discovers inter-university series hosted at IHP; talks come from their own sources. |
 | Indico CNRS — Institut Henri Poincaré (`indico-107`) | IHP | https://indico.math.cnrs.fr/category/107/ | https://indico.math.cnrs.fr/category/107/events.ics | Indico HTTP export API (JSON) incl. sub-categories | every 6 h | very high | ok | 107 | Sub-category names are used as series names. |
 | Google Calendar — Séminaire Géométrie et Topologie (IMJ-PRG) (`gcal-imj-geomtop`) | IMJ-PRG | https://www.imj-prg.fr/gestion/evenement/affEvenement/77 | https://calendar.google.com/calendar/ical/t8352hs3ft8e2ngob31rpijlts%40group.calendar.google.com/public/basic.ics | Public Google Calendar (ICS) | every 6 h | very high | stale | 0 | Linked from the seminar page. Entries usually contain only the speaker's name — used to confirm IMJ entries, never to provide titles. Last entry in March 2024. |
@@ -29,7 +29,7 @@ Status is the result of the last automatic check (`ok`, `warning`, `error`, `sta
 | Indico CNRS — Institut de Mathématiques de Jussieu-Paris Rive Gauche, IMJ-PRG (`indico-237`) | IMJ-PRG | https://indico.math.cnrs.fr/category/237/ | https://indico.math.cnrs.fr/category/237/events.ics | Indico HTTP export API (JSON) incl. sub-categories | every 6 h | very high | ok | 0 | Sub-category names are used as series names. |
 | Mailing list gdt.top.imj-prg (Groupe de travail — Topologie Algébrique) (`list-gdt-top`) | IMJ-PRG | https://listes.services.cnrs.fr/wws/info/gdt.top.imj-prg | — | mailing list (subscribe manually) | — | medium/high | manual | — | — |
 | Mailing list sem-top.paris (Paris topology seminars) (`list-sem-top`) | IMJ-PRG | https://listes.services.cnrs.fr/wws/info/sem-top.paris | — | mailing list (subscribe manually; archive not public) | — | medium/high | manual | — | Created for the IMJ-PRG topology seminar and 'open to all topology seminars of the Paris region'. Announcements for topology afternoons/special days circulate there. |
-| Institut de Mathématique d'Orsay — Séminaires et événements (`imo-orsay`) | IMO / LMO | https://www.imo.universite-paris-saclay.fr/fr/activites/les-evenements-de-limo/ | — | HTML scraping (list cards + event detail pages) | every 12 h | very high | ok | 38 | Orsay plateau: count ~1 h from central Paris. |
+| Institut de Mathématique d'Orsay — Séminaires et événements (`imo-orsay`) | IMO / LMO | https://www.imo.universite-paris-saclay.fr/fr/activites/les-evenements-de-limo/ | — | HTML scraping (list cards + event detail pages) | every 12 h | very high | ok | 39 | Orsay plateau: count ~1 h from central Paris. |
 | IRIF — Théorie des graphes (`irif-adg`) | IRIF | https://www.irif.fr/seminaires/adg/index | https://www.irif.fr/_media/ical/adg.ics | ICS | every 12 h | very high | ok | 0 | — |
 | IRIF — Catégories supérieures, polygraphes et homotopie (`irif-cat`) | IRIF | https://www.irif.fr/seminaires/cat/index | https://www.irif.fr/_media/ical/cat.ics | ICS | every 12 h | very high | ok | 1 | — |
 | IRIF — Combinatoire énumérative et analytique (`irif-combi`) | IRIF | https://www.irif.fr/seminaires/combi/index | https://www.irif.fr/_media/ical/combi.ics | ICS | every 12 h | very high | ok | 0 | — |
@@ -78,7 +78,7 @@ Recurrence, weekday, time and location are only filled when the **official page 
 | CSD seminar | ENS DMA | — | — | https://www.math.ens.psl.eu/la-recherche/seminaires/ | — | — | — | — | — | — | — | — | 1 | discovered |
 | Séminaire Analyse non linéaire et EDP | ENS DMA | — | — | https://www.math.ens.psl.eu/la-recherche/seminaires/ | — | — | — | — | — | — | — | — | 8 | discovered |
 | Séminaire Automath | ENS DMA | — | — | https://www.math.ens.psl.eu/la-recherche/seminaires/ | — | — | — | — | — | — | — | — | 2 | discovered |
-| Séminaire Des mathématiques | ENS DMA | — | — | https://www.math.ens.psl.eu/la-recherche/seminaires/ | — | — | — | — | — | — | — | — | 4 | discovered |
+| Séminaire Des mathématiques | ENS DMA | — | — | https://www.math.ens.psl.eu/la-recherche/seminaires/ | — | — | — | — | — | — | — | — | 3 | discovered |
 | Séminaire informel de probabilités | ENS DMA | — | — | https://www.math.ens.psl.eu/la-recherche/seminaires/ | — | — | — | — | — | — | — | — | 0 | discovered |
 | Cours de l'IHES 2026-2027 | IHES | — | — | https://indico.math.cnrs.fr/category/847/ | https://indico.math.cnrs.fr/category/847/events.ics | — | — | — | — | — | — | — | 4 | discovered |
 | Evénements extérieurs | IHES | — | — | https://indico.math.cnrs.fr/category/750/ | https://indico.math.cnrs.fr/category/750/events.ics | — | — | — | — | — | — | — | 1 | discovered |
@@ -273,7 +273,7 @@ Recurrence, weekday, time and location are only filled when the **official page 
 | Séminaire Datashape (Orsay) | IMO / LMO | — | — | https://www.imo.universite-paris-saclay.fr/fr/activites/les-evenements-de-limo/ | — | — | — | — | — | — | — | — | 6 | discovered |
 | Séminaire Géométrie Topologie Dynamique (Orsay) | IMO / LMO | — | — | https://www.imo.universite-paris-saclay.fr/fr/activites/les-evenements-de-limo/ | — | — | — | — | — | — | — | — | 3 | discovered |
 | Séminaire motivique (Orsay) | IMO / LMO | — | — | https://www.imo.universite-paris-saclay.fr/fr/activites/les-evenements-de-limo/ | — | — | — | — | — | — | — | — | 0 | discovered |
-| Séminaire Probabilités et Statistiques (Orsay) | IMO / LMO | — | — | https://www.imo.universite-paris-saclay.fr/fr/activites/les-evenements-de-limo/ | — | — | — | — | — | — | — | — | 1 | discovered |
+| Séminaire Probabilités et Statistiques (Orsay) | IMO / LMO | — | — | https://www.imo.universite-paris-saclay.fr/fr/activites/les-evenements-de-limo/ | — | — | — | — | — | — | — | — | 2 | discovered |
 | Catégories supérieures, polygraphes et homotopie | IRIF | Pôle Preuves, programmes et systèmes | Sylvain Douteau, François Métayer | https://www.irif.fr/seminaires/cat/index | https://www.irif.fr/_media/ical/cat.ics | — | Friday | 14:00 | Salle 1013 | Fridays 14:00, salle 1013 (as stated on the page: « Le vendredi à 14h, salle 1013 ») — [source](https://www.irif.fr/seminaires/cat/index) | — | higher-categories, homotopy-theory, category-theory | 1 | curated |
 | Combinatoire énumérative et analytique | IRIF | — | — | https://www.irif.fr/seminaires/combi/index | https://www.irif.fr/_media/ical/combi.ics | — | — | — | — | — | — | combinatorics | 0 | curated |
 | Graphes et Logique | IRIF | — | — | https://www.irif.fr/seminaires/gel/index | https://www.irif.fr/_media/ical/gel.ics | — | — | — | — | — | — | logic, combinatorics | 0 | curated |
@@ -292,7 +292,7 @@ Recurrence, weekday, time and location are only filled when the **official page 
 | Séminaire de l'équipe Modélisation et Calcul Scientifique | LAGA | Modélisation et Calcul Scientifique | M. Darbas, E. Audusse | https://www.math.univ-paris13.fr/accueil/equipes/mcs/seminaire-de-lequipe-mcs/ | — | — | — | — | — | — | — | applied | 0 | curated |
 | Séminaire de l'équipe Physique Mathématique & EDP | LAGA | Physique Mathématique & Équations aux Dérivées Partielles | P. Millet, C. Valcu | https://www.math.univ-paris13.fr/accueil/equipes/pm/seminaire-de-lequipe-pm/ | — | — | — | — | — | — | — | mathematical-physics, pde | 4 | curated |
 | Séminaire de l'équipe Probabilités et Statistique | LAGA | Probabilités et Statistique | Henri Elad-Altman, Laurent Tournier | https://www.math.univ-paris13.fr/accueil/equipes/ps/seminaire-de-lequipe-ps/ | — | — | — | — | — | — | — | probability | 4 | curated |
-| Séminaire de l'équipe Systèmes Dynamiques | LAGA | Systèmes Dynamiques | Timothée Bénard, Charles Fougeron, Mingkun Liu | https://www.math.univ-paris13.fr/accueil/equipes/sd/seminaire-de-lequipe-sd/ | — | — | — | — | — | — | — | dynamical-systems | 6 | curated |
+| Séminaire de l'équipe Systèmes Dynamiques | LAGA | Systèmes Dynamiques | Timothée Bénard, Charles Fougeron, Mingkun Liu | https://www.math.univ-paris13.fr/accueil/equipes/sd/seminaire-de-lequipe-sd/ | — | — | — | — | — | — | — | dynamical-systems | 5 | curated |
 | Séminaire de l'équipe Topologie Algébrique | LAGA | Topologie Algébrique | Charles De Clercq, Bruno Vallette, Geoffroy Horel | https://www.math.univ-paris13.fr/accueil/equipes/ta/seminaire-de-lequipe-ta/ | — | — | — | — | — | — | — | algebraic-topology, homotopy-theory, topology | 1 | curated |
 | Conférences | LAMA | — | — | https://indico.math.cnrs.fr/category/550/ | https://indico.math.cnrs.fr/category/550/events.ics | — | — | — | — | — | — | — | 1 | discovered |
 | GT M2 — Combinatoire et entropie | M2 Maths fonda | M2 Mathématiques fondamentales | Antoine Roullet | https://master-math-fonda.imj-prg.fr/gt/combi.pdf | — | — | — | — | — | — | no | combinatorics, probability | 0 | curated |
@@ -319,7 +319,7 @@ Recurrence, weekday, time and location are only filled when the **official page 
 | Feed | URL | Kind | Last status | Items | Note |
 |---|---|---|---|---|---|
 | The Abel Prize | https://abelprize.no/rss.xml | prize | ok | 10 | — |
-| arXiv listings (math.AT, math.GT, math.AG, math.CT, math.KT, math.QA, math.CO, math.DS) | https://rss.arxiv.org/rss/math.AT+math.GT+math.AG+math.CT+math.KT+math.QA+math.CO+math.DS | arxiv | ok | 236 | — |
+| arXiv listings (math.AT, math.GT, math.AG, math.CT, math.KT, math.QA, math.CO, math.DS) | https://rss.arxiv.org/rss/math.AT+math.GT+math.AG+math.CT+math.KT+math.QA+math.CO+math.DS | arxiv | ok | 151 | — |
 | CNRS Mathématiques (INSMI) | https://www.insmi.cnrs.fr/fr/rss.xml | institute | stale | 5 | Newest item 2022-09-16 — feed appears unmaintained |
 | IHES — Actualités | https://www.ihes.fr/feed/ | institute | ok | 10 | — |
 | Quanta Magazine — Mathematics | https://www.quantamagazine.org/mathematics/feed/ | news | ok | 5 | — |
