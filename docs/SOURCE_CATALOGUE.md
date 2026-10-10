@@ -1,6 +1,6 @@
 # Source catalogue — Paris mathematical events
 
-_Generated on 2026-10-09T21:49:04Z (`npm run catalogue`)._
+_Generated on 2026-10-10T02:28:28Z (`npm run catalogue`)._
 
 Reliability scale: official event page / official calendar → **very high**; department page → **high**; mailing list → **medium/high**; third-party aggregator → **medium**.
 Status is the result of the last automatic check (`ok`, `warning`, `error`, `stale` = reachable but not updated, `blocked` = anti-bot wall, `manual` = monitored but not machine-extractable, `never_run`).
@@ -21,7 +21,7 @@ Status is the result of the last automatic check (`ok`, `warning`, `error`, `sta
 | FSMP — Agenda & actualités (`fsmp-agenda`) | FSMP | https://www.sciencesmaths-paris.fr/fr/actualites | — | catalogued only | — | high | manual | — | Mostly programmes, calls and outreach (e.g. Horizon Maths). |
 | IHES — Events (seminars, cours, conferences) (`ihes-events`) | IHES | https://www.ihes.fr/en/events/ | https://indico.math.cnrs.fr/category/57/ | HTML scraping (event tables link to Indico) | every 12 h | very high | ok | 9 | Every row links to its Indico event, which makes deduplication exact. |
 | Indico CNRS — I.H.E.S (`indico-57`) | IHES | https://indico.math.cnrs.fr/category/57/ | https://indico.math.cnrs.fr/category/57/events.ics | Indico HTTP export API (JSON) incl. sub-categories | every 6 h | very high | ok | 12 | Sub-category names are used as series names. |
-| IHP — Agenda (`ihp-agenda`) | IHP | https://www.ihp.fr/fr/agenda | — | HTML scraping of paginated agenda (/fr/agenda?page=N) | every 12 h | very high | ok | 67 | agenda.xml returns HTTP 500. Also lists events of IHP partners held outside Paris (e.g. Cargèse) — flagged as outside the region. Most IHP talks are also on Indico (deduplicated). |
+| IHP — Agenda (`ihp-agenda`) | IHP | https://www.ihp.fr/fr/agenda | — | HTML scraping of paginated agenda (/fr/agenda?page=N) | every 12 h | very high | ok | 66 | agenda.xml returns HTTP 500. Also lists events of IHP partners held outside Paris (e.g. Cargèse) — flagged as outside the region. Most IHP talks are also on Indico (deduplicated). |
 | IHP — Recurring seminars & working groups (catalogue page) (`ihp-recurrent`) | IHP | https://www.ihp.fr/fr/seminaires-recurrents-et-groupes-de-travail | — | HTML scraping (series discovery: name, frequency, weekday, link) | weekly | high | ok | 0 | Discovers inter-university series hosted at IHP; talks come from their own sources. |
 | Indico CNRS — Institut Henri Poincaré (`indico-107`) | IHP | https://indico.math.cnrs.fr/category/107/ | https://indico.math.cnrs.fr/category/107/events.ics | Indico HTTP export API (JSON) incl. sub-categories | every 6 h | very high | ok | 104 | Sub-category names are used as series names. |
 | Google Calendar — Séminaire Géométrie et Topologie (IMJ-PRG) (`gcal-imj-geomtop`) | IMJ-PRG | https://www.imj-prg.fr/gestion/evenement/affEvenement/77 | https://calendar.google.com/calendar/ical/t8352hs3ft8e2ngob31rpijlts%40group.calendar.google.com/public/basic.ics | Public Google Calendar (ICS) | every 6 h | very high | stale | 0 | Linked from the seminar page. Entries usually contain only the speaker's name — used to confirm IMJ entries, never to provide titles. Last entry in March 2024. |
@@ -164,7 +164,7 @@ Recurrence, weekday, time and location are only filled when the **official page 
 | Séminaire Symplectix de topologie simplectique | IHP | — | — | https://symplectix.math.cnrs.fr/ | — | — | Friday | — | Institut Henri Poincaré | Monthly, Fridays (as listed by IHP) — [source](https://www.ihp.fr/fr/seminaires-recurrents-et-groupes-de-travail) | — | topology, symplectic | 0 | discovered |
 | Séminaires et groupes de travail | IHP | — | — | https://indico.math.cnrs.fr/category/109/ | https://indico.math.cnrs.fr/category/109/events.ics | — | — | — | — | — | — | — | 1 | discovered |
 | SPIKE - Seminar in Paris for Interactions around Kinetic Equations | IHP | — | — | https://indico.math.cnrs.fr/category/797/ | — | — | Tuesday | — | Institut Henri Poincaré | Monthly, Tuesdays (as listed by IHP) — [source](https://www.ihp.fr/fr/seminaires-recurrents-et-groupes-de-travail) | — | pde | 0 | discovered |
-| Tout public | IHP | — | — | https://www.ihp.fr/fr/seminaires-recurrents-et-groupes-de-travail | — | — | — | — | — | — | — | — | 1 | discovered |
+| Tout public | IHP | — | — | https://www.ihp.fr/fr/seminaires-recurrents-et-groupes-de-travail | — | — | — | — | — | — | — | — | 0 | discovered |
 | Agenda interne du labo | IMJ-PRG | — | — | https://www.imj-prg.fr/gestion/evenement/affEvenement/83 | — | — | — | — | — | — | — | — | 0 | discovered |
 | Colloquium | IMJ-PRG | — | Pierre Berger, Diego Izquierdo | https://www.imj-prg.fr/gestion/evenement/affEvenement/63 | — | — | — | — | — | — | — | — | 2 | discovered |
 | Groupe de travail : feuilletages singuliers | IMJ-PRG | Analyse Fonctionnelle | Dario Cordero-Erausquin (IMJ), Matthieu Fradelizi (Paris Est - UMLV), Olivier Guedon (Paris Est - UMLV), Joseph Lehec (Dauphine), | https://www.imj-prg.fr/gestion/evenement/affEvenement/85 | — | — | — | — | Campus Pierre et Marie Curie | — | — | analysis | 0 | discovered |
