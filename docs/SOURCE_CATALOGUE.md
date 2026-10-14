@@ -1,6 +1,6 @@
 # Source catalogue — Paris mathematical events
 
-_Generated on 2026-10-14T02:01:31Z (`npm run catalogue`)._
+_Generated on 2026-10-14T10:21:59Z (`npm run catalogue`)._
 
 Reliability scale: official event page / official calendar → **very high**; department page → **high**; mailing list → **medium/high**; third-party aggregator → **medium**.
 Status is the result of the last automatic check (`ok`, `warning`, `error`, `stale` = reachable but not updated, `blocked` = anti-bot wall, `manual` = monitored but not machine-extractable, `never_run`).
@@ -90,7 +90,7 @@ Recurrence, weekday, time and location are only filled when the **official page 
 | Séminaire de Mathématique | IHES | — | — | https://www.ihes.fr/en/events/ | — | — | — | — | — | — | — | — | 0 | discovered |
 | Séminaire de Mathématique | IHES | — | — | https://indico.math.cnrs.fr/category/72/ | https://indico.math.cnrs.fr/category/72/events.ics | — | — | — | — | — | — | — | 1 | discovered |
 | Séminaire de Physique Théorique | IHES | — | — | https://www.ihes.fr/en/events/ | — | — | — | — | — | — | — | — | 0 | discovered |
-| Séminaire de Physique Théorique | IHES | — | — | https://indico.math.cnrs.fr/category/71/ | https://indico.math.cnrs.fr/category/71/events.ics | — | — | — | — | — | — | — | 2 | discovered |
+| Séminaire de Physique Théorique | IHES | — | — | https://indico.math.cnrs.fr/category/71/ | https://indico.math.cnrs.fr/category/71/events.ics | — | — | — | — | — | — | — | 1 | discovered |
 | Séminaire Géométrie et groupes discrets | IHES | — | — | https://www.ihes.fr/en/events/ | — | — | — | — | — | — | — | — | 0 | discovered |
 | Séminaire Géométrie et groupes discrets | IHES | — | — | https://indico.math.cnrs.fr/category/240/ | https://indico.math.cnrs.fr/category/240/events.ics | — | — | — | — | — | — | — | 0 | discovered |
 | 2026-T3 Operator Algebras: Approximation, Rigidity and Dynamics | IHP | — | — | https://indico.math.cnrs.fr/category/784/ | https://indico.math.cnrs.fr/category/784/events.ics | — | — | — | — | — | — | — | 2 | discovered |
@@ -141,7 +141,7 @@ Recurrence, weekday, time and location are only filled when the **official page 
 | Séminaire de cryptofinance de Paris | IHP | — | — | https://webusers.imj-prg.fr/~ricardo.perez-marco/blockchain/blockchain.html | — | — | Thursday | — | Institut Henri Poincaré | Monthly, Thursdays (as listed by IHP) — [source](https://www.ihp.fr/fr/seminaires-recurrents-et-groupes-de-travail) | — | applied | 0 | discovered |
 | Séminaire dérivé | IHP | — | — | https://indico.math.cnrs.fr/category/808/ | — | — | Friday | — | Institut Henri Poincaré | Monthly, Fridays (as listed by IHP) — [source](https://www.ihp.fr/fr/seminaires-recurrents-et-groupes-de-travail) | — | derived-geometry | 0 | discovered |
 | Séminaire des doctorants de FiME | IHP | — | — | https://indico.math.cnrs.fr/category/642/ | https://indico.math.cnrs.fr/category/642/events.ics | — | — | — | — | — | — | — | 5 | discovered |
-| Séminaire des doctorants de FIME | IHP | — | — | https://www.ihp.fr/fr/seminaires-recurrents-et-groupes-de-travail | — | — | — | — | — | — | — | — | 1 | discovered |
+| Séminaire des doctorants de FIME | IHP | — | — | https://www.ihp.fr/fr/seminaires-recurrents-et-groupes-de-travail | — | — | — | — | — | — | — | — | 2 | discovered |
 | Séminaire des doctorants FiME | IHP | — | — | https://indico.math.cnrs.fr/category/642/ | — | — | Friday | — | Institut Henri Poincaré | Twice a month, Fridays (as listed by IHP) — [source](https://www.ihp.fr/fr/seminaires-recurrents-et-groupes-de-travail) | — | applied | 0 | discovered |
 | Séminaire Équations différentielles motiviques et au–delà | IHP | — | — | https://indico.math.cnrs.fr/category/603/ | — | — | Friday | — | Institut Henri Poincaré | Monthly, Fridays (as listed by IHP) — [source](https://www.ihp.fr/fr/seminaires-recurrents-et-groupes-de-travail) | — | — | 0 | discovered |
 | Séminaire FiME – FDD | IHP | — | — | https://www.fime-lab.org/ | — | — | Friday | — | Institut Henri Poincaré | Twice a month, Fridays (as listed by IHP) — [source](https://www.ihp.fr/fr/seminaires-recurrents-et-groupes-de-travail) | — | applied | 0 | discovered |
@@ -275,7 +275,7 @@ Recurrence, weekday, time and location are only filled when the **official page 
 | Séminaire Analyse Harmonique (Orsay) | IMO / LMO | — | — | https://www.imo.universite-paris-saclay.fr/fr/activites/les-evenements-de-limo/ | — | — | — | — | — | — | — | — | 3 | discovered |
 | Séminaire Analyse Numérique et EDP (Orsay) | IMO / LMO | — | — | https://www.imo.universite-paris-saclay.fr/fr/activites/les-evenements-de-limo/ | — | — | — | — | — | — | — | — | 6 | discovered |
 | Séminaire Arithmétique et Géométrie Algébrique (Orsay) | IMO / LMO | — | — | https://www.imo.universite-paris-saclay.fr/fr/activites/les-evenements-de-limo/ | — | — | — | — | — | — | — | — | 6 | discovered |
-| Séminaire Datashape (Orsay) | IMO / LMO | — | — | https://www.imo.universite-paris-saclay.fr/fr/activites/les-evenements-de-limo/ | — | — | — | — | — | — | — | — | 6 | discovered |
+| Séminaire Datashape (Orsay) | IMO / LMO | — | — | https://www.imo.universite-paris-saclay.fr/fr/activites/les-evenements-de-limo/ | — | — | — | — | — | — | — | — | 5 | discovered |
 | Séminaire Géométrie Topologie Dynamique (Orsay) | IMO / LMO | — | — | https://www.imo.universite-paris-saclay.fr/fr/activites/les-evenements-de-limo/ | — | — | — | — | — | — | — | — | 2 | discovered |
 | Séminaire motivique (Orsay) | IMO / LMO | — | — | https://www.imo.universite-paris-saclay.fr/fr/activites/les-evenements-de-limo/ | — | — | — | — | — | — | — | — | 0 | discovered |
 | Séminaire Probabilités et Statistiques (Orsay) | IMO / LMO | — | — | https://www.imo.universite-paris-saclay.fr/fr/activites/les-evenements-de-limo/ | — | — | — | — | — | — | — | — | 2 | discovered |
@@ -324,7 +324,7 @@ Recurrence, weekday, time and location are only filled when the **official page 
 | Feed | URL | Kind | Last status | Items | Note |
 |---|---|---|---|---|---|
 | The Abel Prize | https://abelprize.no/rss.xml | prize | ok | 10 | — |
-| arXiv listings (math.AT, math.GT, math.AG, math.CT, math.KT, math.QA, math.CO, math.DS) | https://rss.arxiv.org/rss/math.AT+math.GT+math.AG+math.CT+math.KT+math.QA+math.CO+math.DS | arxiv | warning | 0 | No new/cross-listed entries (weekend or holiday listing?) |
+| arXiv listings (math.AT, math.GT, math.AG, math.CT, math.KT, math.QA, math.CO, math.DS) | https://rss.arxiv.org/rss/math.AT+math.GT+math.AG+math.CT+math.KT+math.QA+math.CO+math.DS | arxiv | ok | 375 | — |
 | CNRS Mathématiques (INSMI) | https://www.insmi.cnrs.fr/fr/rss.xml | institute | stale | 5 | Newest item 2022-09-16 — feed appears unmaintained |
 | IHES — Actualités | https://www.ihes.fr/feed/ | institute | ok | 10 | — |
 | Quanta Magazine — Mathematics | https://www.quantamagazine.org/mathematics/feed/ | news | ok | 5 | — |
