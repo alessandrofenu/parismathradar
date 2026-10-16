@@ -1,6 +1,6 @@
 # Source catalogue — Paris mathematical events
 
-_Generated on 2026-10-16T01:30:50Z (`npm run catalogue`)._
+_Generated on 2026-10-16T09:58:18Z (`npm run catalogue`)._
 
 Reliability scale: official event page / official calendar → **very high**; department page → **high**; mailing list → **medium/high**; third-party aggregator → **medium**.
 Status is the result of the last automatic check (`ok`, `warning`, `error`, `stale` = reachable but not updated, `blocked` = anti-bot wall, `manual` = monitored but not machine-extractable, `never_run`).
@@ -21,7 +21,7 @@ Status is the result of the last automatic check (`ok`, `warning`, `error`, `sta
 | FSMP — Agenda & actualités (`fsmp-agenda`) | FSMP | https://www.sciencesmaths-paris.fr/fr/actualites | — | catalogued only | — | high | manual | — | Mostly programmes, calls and outreach (e.g. Horizon Maths). |
 | IHES — Events (seminars, cours, conferences) (`ihes-events`) | IHES | https://www.ihes.fr/en/events/ | https://indico.math.cnrs.fr/category/57/ | HTML scraping (event tables link to Indico) | every 12 h | very high | ok | 7 | Every row links to its Indico event, which makes deduplication exact. |
 | Indico CNRS — I.H.E.S (`indico-57`) | IHES | https://indico.math.cnrs.fr/category/57/ | https://indico.math.cnrs.fr/category/57/events.ics | Indico HTTP export API (JSON) incl. sub-categories | every 6 h | very high | ok | 10 | Sub-category names are used as series names. |
-| IHP — Agenda (`ihp-agenda`) | IHP | https://www.ihp.fr/fr/agenda | — | HTML scraping of paginated agenda (/fr/agenda?page=N) | every 12 h | very high | ok | 64 | agenda.xml returns HTTP 500. Also lists events of IHP partners held outside Paris (e.g. Cargèse) — flagged as outside the region. Most IHP talks are also on Indico (deduplicated). |
+| IHP — Agenda (`ihp-agenda`) | IHP | https://www.ihp.fr/fr/agenda | — | HTML scraping of paginated agenda (/fr/agenda?page=N) | every 12 h | very high | ok | 69 | agenda.xml returns HTTP 500. Also lists events of IHP partners held outside Paris (e.g. Cargèse) — flagged as outside the region. Most IHP talks are also on Indico (deduplicated). |
 | IHP — Recurring seminars & working groups (catalogue page) (`ihp-recurrent`) | IHP | https://www.ihp.fr/fr/seminaires-recurrents-et-groupes-de-travail | — | HTML scraping (series discovery: name, frequency, weekday, link) | weekly | high | ok | 0 | Discovers inter-university series hosted at IHP; talks come from their own sources. |
 | Indico CNRS — Institut Henri Poincaré (`indico-107`) | IHP | https://indico.math.cnrs.fr/category/107/ | https://indico.math.cnrs.fr/category/107/events.ics | Indico HTTP export API (JSON) incl. sub-categories | every 6 h | very high | ok | 98 | Sub-category names are used as series names. |
 | Google Calendar — Séminaire Géométrie et Topologie (IMJ-PRG) (`gcal-imj-geomtop`) | IMJ-PRG | https://www.imj-prg.fr/gestion/evenement/affEvenement/77 | https://calendar.google.com/calendar/ical/t8352hs3ft8e2ngob31rpijlts%40group.calendar.google.com/public/basic.ics | Public Google Calendar (ICS) | every 6 h | very high | stale | 0 | Linked from the seminar page. Entries usually contain only the speaker's name — used to confirm IMJ entries, never to provide titles. Last entry in March 2024. |
@@ -79,7 +79,7 @@ Recurrence, weekday, time and location are only filled when the **official page 
 | CSD seminar | ENS DMA | — | — | https://www.math.ens.psl.eu/la-recherche/seminaires/ | — | — | — | — | — | — | — | — | 0 | discovered |
 | ENS-Data Science colloquium | ENS DMA | — | — | https://www.math.ens.psl.eu/la-recherche/seminaires/ | — | — | — | — | — | — | — | — | 1 | discovered |
 | Séminaire Analyse non linéaire et EDP | ENS DMA | — | — | https://www.math.ens.psl.eu/la-recherche/seminaires/ | — | — | — | — | — | — | — | — | 7 | discovered |
-| Séminaire Automath | ENS DMA | — | — | https://www.math.ens.psl.eu/la-recherche/seminaires/ | — | — | — | — | — | — | — | — | 2 | discovered |
+| Séminaire Automath | ENS DMA | — | — | https://www.math.ens.psl.eu/la-recherche/seminaires/ | — | — | — | — | — | — | — | — | 1 | discovered |
 | Séminaire Des mathématiques | ENS DMA | — | — | https://www.math.ens.psl.eu/la-recherche/seminaires/ | — | — | — | — | — | — | — | — | 3 | discovered |
 | Séminaire informel de probabilités | ENS DMA | — | — | https://www.math.ens.psl.eu/la-recherche/seminaires/ | — | — | — | — | — | — | — | — | 1 | discovered |
 | Séminaire Math - Environnement | ENS DMA | — | — | https://www.math.ens.psl.eu/la-recherche/seminaires/ | — | — | — | — | — | — | — | — | 0 | discovered |
@@ -225,7 +225,7 @@ Recurrence, weekday, time and location are only filled when the **official page 
 | Séminaire Claude Chevalley | IMJ-PRG | — | O. Brunat, M. Cabanes, et O. Dudas. | https://www.imj-prg.fr/gestion/evenement/affEvenement/5 | — | — | — | — | 11 rue Pierre et Marie Curie - 75005 Paris | — | — | — | 0 | discovered |
 | Séminaire Cohomologie équivariante et Quantification géométrique | IMJ-PRG | — | — | https://www.imj-prg.fr/gestion/evenement/affEvenement/14 | — | — | — | — | — | — | — | — | 0 | discovered |
 | Séminaire Colloquium Géométrie et Dynamique | IMJ-PRG | Géométrie et Dynamique | Y. Martinez-Maure, R. Petrides, M. Ruggiero, A. Zorich | https://www.imj-prg.fr/gestion/evenement/affEvenement/90 | — | — | — | — | — | — | — | geometry, dynamical-systems | 0 | discovered |
-| Séminaire Combinatoire, Optimisation, et Interactions | IMJ-PRG | Combinatoire et Optimisation | Jérémie Bouttier, Marco Mazzola, Sofia Tarricone | https://www.imj-prg.fr/gestion/evenement/affEvenement/111 | — | — | — | — | Campus Pierre et Marie Curie, 15.16-413 | — | — | combinatorics | 1 | discovered |
+| Séminaire Combinatoire, Optimisation, et Interactions | IMJ-PRG | Combinatoire et Optimisation | Jérémie Bouttier, Marco Mazzola, Sofia Tarricone | https://www.imj-prg.fr/gestion/evenement/affEvenement/111 | — | — | — | — | Campus Pierre et Marie Curie, 15.16-413 | — | — | combinatorics | 0 | discovered |
 | Séminaire d'Algèbre | IMJ-PRG | Groupes, Représentations et Géométrie | J. Alev, D. Hernandez, B. Keller, Th. Levasseur, et S. Morier-Genoud. | https://www.imj-prg.fr/gestion/evenement/affEvenement/1 | — | — | — | — | Info sur https://researchseminars.org/seminar/paris-algebra-seminar | — | yes | representation-theory, group-theory | 7 | discovered |
 | Séminaire d'Algèbres d'Opérateurs | IMJ-PRG | Algèbres d'Opérateurs | Matthieu Joseph, Omar Mohsen | https://www.imj-prg.fr/gestion/evenement/affEvenement/74 | — | — | — | — | Sophie Germain, 1013 | — | yes | operator-algebras | 5 | discovered |
 | Séminaire d'Analyse et Géométrie | IMJ-PRG | — | O. Biquard, I. Itenberg, S. Shen, T.-D. Tô | https://www.imj-prg.fr/gestion/evenement/affEvenement/56 | — | — | — | — | Jussieu, 15–25.502 | — | — | — | 0 | discovered |
@@ -290,10 +290,10 @@ Recurrence, weekday, time and location are only filled when the **official page 
 | Séminaire Formath (Formalized Mathematics) | IRIF | — | — | https://www.irif.fr/seminaires/picube/index | https://www.irif.fr/_media/ical/picube.ics | — | — | — | — | — | — | logic | 0 | curated |
 | Théorie des graphes | IRIF | — | — | https://www.irif.fr/seminaires/adg/index | https://www.irif.fr/_media/ical/adg.ics | — | — | — | — | — | — | combinatorics | 0 | curated |
 | Théorie des types et son implémentation | IRIF | — | — | https://www.irif.fr/seminaires/types/index | https://www.irif.fr/_media/ical/types.ics | — | — | — | — | — | — | logic | 1 | curated |
-| Topos pour la réalisabilité | IRIF | — | Dominik Kirst, Umberto Tarantino | https://www.irif.fr/seminaires/topos/index | https://www.irif.fr/_media/ical/topos.ics | — | Friday | 15:00 | Salle 3063 | Fridays 15:00, salle 3063 (as stated on the page) — [source](https://www.irif.fr/seminaires/topos/index) | — | category-theory, logic | 1 | curated |
+| Topos pour la réalisabilité | IRIF | — | Dominik Kirst, Umberto Tarantino | https://www.irif.fr/seminaires/topos/index | https://www.irif.fr/_media/ical/topos.ics | — | Friday | 15:00 | Salle 3063 | Fridays 15:00, salle 3063 (as stated on the page) — [source](https://www.irif.fr/seminaires/topos/index) | — | category-theory, logic | 0 | curated |
 | Après-midi de topologie (Paris) | LAGA | Topologie Algébrique (LAGA) and partners | — | https://www.math.univ-paris13.fr/accueil/equipes/ta/seminaire-de-lequipe-ta/ | — | — | — | — | — | — | — | algebraic-topology, homotopy-theory, topology | 0 | curated |
 | Séminaire de l'équipe AGC3 | LAGA | AGC3 | Wolfgang Schmid, Martino Borello | https://www.math.univ-paris13.fr/accueil/equipes/agc3/seminaire-de-lequipe-agc3/ | — | — | — | — | — | — | — | — | 2 | curated |
-| Séminaire de l'équipe Arithmétique et Géométrie Algébrique | LAGA | Arithmétique et Géométrie Algébrique | F. Scavia, M. Tamiozzo | https://www.math.univ-paris13.fr/accueil/equipes/aga/seminaire-de-lequipe-aga/ | — | — | — | — | — | — | — | number-theory, algebraic-geometry | 6 | curated |
+| Séminaire de l'équipe Arithmétique et Géométrie Algébrique | LAGA | Arithmétique et Géométrie Algébrique | F. Scavia, M. Tamiozzo | https://www.math.univ-paris13.fr/accueil/equipes/aga/seminaire-de-lequipe-aga/ | — | — | — | — | — | — | — | number-theory, algebraic-geometry | 5 | curated |
 | Séminaire de l'équipe Mathématiques pour la Biologie et les Images | LAGA | Mathématiques pour la Biologie et les Images | Sarah Kaakai, Frank Alvarez, Madeleine Kubasch | https://www.math.univ-paris13.fr/accueil/equipes/mbi/seminaire-de-lequipe-mbi/ | — | — | — | — | — | — | — | applied | 3 | curated |
 | Séminaire de l'équipe Modélisation et Calcul Scientifique | LAGA | Modélisation et Calcul Scientifique | M. Darbas, E. Audusse | https://www.math.univ-paris13.fr/accueil/equipes/mcs/seminaire-de-lequipe-mcs/ | — | — | — | — | — | — | — | applied | 0 | curated |
 | Séminaire de l'équipe Physique Mathématique & EDP | LAGA | Physique Mathématique & Équations aux Dérivées Partielles | P. Millet, C. Valcu | https://www.math.univ-paris13.fr/accueil/equipes/pm/seminaire-de-lequipe-pm/ | — | — | — | — | — | — | — | mathematical-physics, pde | 4 | curated |
@@ -313,7 +313,7 @@ Recurrence, weekday, time and location are only filled when the **official page 
 | GT M2 — Sexual and gender-based violence and discrimination working group | M2 Maths fonda | M2 Mathématiques fondamentales | — | https://master-math-fonda.imj-prg.fr/gt/vss.pdf | — | — | — | — | — | — | no | — | 0 | discovered |
 | Sujet proposé — Faisceaux cohérents et super-connexions | M2 Maths fonda | M2 Mathématiques fondamentales | Shu Shen | https://master-math-fonda.imj-prg.fr/gt/Shen.pdf | — | — | — | — | — | — | no | algebraic-geometry, differential-geometry, homological-algebra | 0 | curated |
 | Journées de la FP2M | Modal'X | — | — | https://indico.math.cnrs.fr/category/746/ | https://indico.math.cnrs.fr/category/746/events.ics | — | — | — | — | — | — | — | 0 | discovered |
-| Cast3M | Paris-Saclay | — | — | https://indico.math.cnrs.fr/category/229/ | https://indico.math.cnrs.fr/category/229/events.ics | — | — | — | — | — | — | — | 2 | discovered |
+| Cast3M | Paris-Saclay | — | — | https://indico.math.cnrs.fr/category/229/ | https://indico.math.cnrs.fr/category/229/events.ics | — | — | — | — | — | — | — | 1 | discovered |
 | Colloques | Paris-Saclay | — | — | https://indico.math.cnrs.fr/category/670/ | https://indico.math.cnrs.fr/category/670/events.ics | — | — | — | — | — | — | — | 1 | discovered |
 | Laboratoire de Mathématiques d'Orsay | Paris-Saclay | — | — | https://indico.math.cnrs.fr/category/233/ | https://indico.math.cnrs.fr/category/233/events.ics | — | — | — | — | — | — | — | 0 | discovered |
 | Maison de la Simulation | Paris-Saclay | — | — | https://indico.math.cnrs.fr/category/228/ | https://indico.math.cnrs.fr/category/228/events.ics | — | — | — | — | — | — | — | 0 | discovered |
@@ -326,7 +326,7 @@ Recurrence, weekday, time and location are only filled when the **official page 
 | Feed | URL | Kind | Last status | Items | Note |
 |---|---|---|---|---|---|
 | The Abel Prize | https://abelprize.no/rss.xml | prize | ok | 10 | — |
-| arXiv listings (math.AT, math.GT, math.AG, math.CT, math.KT, math.QA, math.CO, math.DS) | https://rss.arxiv.org/rss/math.AT+math.GT+math.AG+math.CT+math.KT+math.QA+math.CO+math.DS | arxiv | ok | 128 | — |
+| arXiv listings (math.AT, math.GT, math.AG, math.CT, math.KT, math.QA, math.CO, math.DS) | https://rss.arxiv.org/rss/math.AT+math.GT+math.AG+math.CT+math.KT+math.QA+math.CO+math.DS | arxiv | ok | 133 | — |
 | CNRS Mathématiques (INSMI) | https://www.insmi.cnrs.fr/fr/rss.xml | institute | stale | 5 | Newest item 2022-09-16 — feed appears unmaintained |
 | IHES — Actualités | https://www.ihes.fr/feed/ | institute | ok | 10 | — |
 | Quanta Magazine — Mathematics | https://www.quantamagazine.org/mathematics/feed/ | news | ok | 5 | — |
