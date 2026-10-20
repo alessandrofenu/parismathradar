@@ -1,6 +1,6 @@
 # Source catalogue — Paris mathematical events
 
-_Generated on 2026-10-20T01:57:01Z (`npm run catalogue`)._
+_Generated on 2026-10-20T10:12:45Z (`npm run catalogue`)._
 
 Reliability scale: official event page / official calendar → **very high**; department page → **high**; mailing list → **medium/high**; third-party aggregator → **medium**.
 Status is the result of the last automatic check (`ok`, `warning`, `error`, `stale` = reachable but not updated, `blocked` = anti-bot wall, `manual` = monitored but not machine-extractable, `never_run`).
@@ -19,8 +19,8 @@ Status is the result of the last automatic check (`ok`, `warning`, `error`, `sta
 | Indico CNRS — Conservatoire National des Arts et Métiers (`indico-22`) | Cnam | https://indico.math.cnrs.fr/category/22/ | https://indico.math.cnrs.fr/category/22/events.ics | Indico HTTP export API (JSON) incl. sub-categories | every 6 h | very high | ok | 0 | Sub-category names are used as series names. |
 | ENS DMA — events calendar (all seminars) (`ens-dma`) | ENS DMA | https://www.math.ens.psl.eu/la-recherche/seminaires/ | https://www.math.ens.psl.eu/evenements/?ical=1 | JSON REST API (WordPress The Events Calendar: /wp-json/tribe/events/v1/events) | every 6 h | very high | ok | 14 | Structured categories = seminar series. Several ENS series listed as 'archives' publish nothing now. |
 | FSMP — Agenda & actualités (`fsmp-agenda`) | FSMP | https://www.sciencesmaths-paris.fr/fr/actualites | — | catalogued only | — | high | manual | — | Mostly programmes, calls and outreach (e.g. Horizon Maths). |
-| IHES — Events (seminars, cours, conferences) (`ihes-events`) | IHES | https://www.ihes.fr/en/events/ | https://indico.math.cnrs.fr/category/57/ | HTML scraping (event tables link to Indico) | every 12 h | very high | ok | 7 | Every row links to its Indico event, which makes deduplication exact. |
-| Indico CNRS — I.H.E.S (`indico-57`) | IHES | https://indico.math.cnrs.fr/category/57/ | https://indico.math.cnrs.fr/category/57/events.ics | Indico HTTP export API (JSON) incl. sub-categories | every 6 h | very high | ok | 10 | Sub-category names are used as series names. |
+| IHES — Events (seminars, cours, conferences) (`ihes-events`) | IHES | https://www.ihes.fr/en/events/ | https://indico.math.cnrs.fr/category/57/ | HTML scraping (event tables link to Indico) | every 12 h | very high | ok | 10 | Every row links to its Indico event, which makes deduplication exact. |
+| Indico CNRS — I.H.E.S (`indico-57`) | IHES | https://indico.math.cnrs.fr/category/57/ | https://indico.math.cnrs.fr/category/57/events.ics | Indico HTTP export API (JSON) incl. sub-categories | every 6 h | very high | ok | 14 | Sub-category names are used as series names. |
 | IHP — Agenda (`ihp-agenda`) | IHP | https://www.ihp.fr/fr/agenda | — | HTML scraping of paginated agenda (/fr/agenda?page=N) | every 12 h | very high | ok | 68 | agenda.xml returns HTTP 500. Also lists events of IHP partners held outside Paris (e.g. Cargèse) — flagged as outside the region. Most IHP talks are also on Indico (deduplicated). |
 | IHP — Recurring seminars & working groups (catalogue page) (`ihp-recurrent`) | IHP | https://www.ihp.fr/fr/seminaires-recurrents-et-groupes-de-travail | — | HTML scraping (series discovery: name, frequency, weekday, link) | weekly | high | ok | 0 | Discovers inter-university series hosted at IHP; talks come from their own sources. |
 | Indico CNRS — Institut Henri Poincaré (`indico-107`) | IHP | https://indico.math.cnrs.fr/category/107/ | https://indico.math.cnrs.fr/category/107/events.ics | Indico HTTP export API (JSON) incl. sub-categories | every 6 h | very high | ok | 94 | Sub-category names are used as series names. |
@@ -30,7 +30,7 @@ Status is the result of the last automatic check (`ok`, `warning`, `error`, `sta
 | Mailing list gdt.top.imj-prg (Groupe de travail — Topologie Algébrique) (`list-gdt-top`) | IMJ-PRG | https://listes.services.cnrs.fr/wws/info/gdt.top.imj-prg | — | mailing list (subscribe manually) | — | medium/high | manual | — | — |
 | Mailing list sem-top.paris (Paris topology seminars) (`list-sem-top`) | IMJ-PRG | https://listes.services.cnrs.fr/wws/info/sem-top.paris | — | mailing list (subscribe manually; archive not public) | — | medium/high | manual | — | Created for the IMJ-PRG topology seminar and 'open to all topology seminars of the Paris region'. Announcements for topology afternoons/special days circulate there. |
 | Institut de Mathématique d'Orsay — Séminaires et événements (`imo-orsay`) | IMO / LMO | https://www.imo.universite-paris-saclay.fr/fr/activites/les-evenements-de-limo/ | — | HTML scraping (list cards + event detail pages) | every 12 h | very high | ok | 34 | Orsay plateau: count ~1 h from central Paris. |
-| IRIF — Théorie des graphes (`irif-adg`) | IRIF | https://www.irif.fr/seminaires/adg/index | https://www.irif.fr/_media/ical/adg.ics | ICS | every 12 h | very high | ok | 0 | — |
+| IRIF — Théorie des graphes (`irif-adg`) | IRIF | https://www.irif.fr/seminaires/adg/index | https://www.irif.fr/_media/ical/adg.ics | ICS | every 12 h | very high | ok | 1 | — |
 | IRIF — Catégories supérieures, polygraphes et homotopie (`irif-cat`) | IRIF | https://www.irif.fr/seminaires/cat/index | https://www.irif.fr/_media/ical/cat.ics | ICS | every 12 h | very high | ok | 0 | — |
 | IRIF — Combinatoire énumérative et analytique (`irif-combi`) | IRIF | https://www.irif.fr/seminaires/combi/index | https://www.irif.fr/_media/ical/combi.ics | ICS | every 12 h | very high | ok | 0 | — |
 | IRIF — Graphes et Logique (`irif-gel`) | IRIF | https://www.irif.fr/seminaires/gel/index | https://www.irif.fr/_media/ical/gel.ics | ICS | every 12 h | very high | stale | 0 | — |
@@ -86,14 +86,14 @@ Recurrence, weekday, time and location are only filled when the **official page 
 | Cours de l'IHES 2026-2027 | IHES | — | — | https://indico.math.cnrs.fr/category/847/ | https://indico.math.cnrs.fr/category/847/events.ics | — | — | — | — | — | — | — | 3 | discovered |
 | Evénements extérieurs | IHES | — | — | https://indico.math.cnrs.fr/category/750/ | https://indico.math.cnrs.fr/category/750/events.ics | — | — | — | — | — | — | — | 1 | discovered |
 | Les Amis de l'IHES | IHES | — | — | https://indico.math.cnrs.fr/category/385/ | https://indico.math.cnrs.fr/category/385/events.ics | — | — | — | — | — | — | — | 2 | discovered |
-| Mathématiques | IHES | — | — | https://indico.math.cnrs.fr/category/62/ | https://indico.math.cnrs.fr/category/62/events.ics | — | — | — | — | — | — | — | 1 | discovered |
+| Mathématiques | IHES | — | — | https://indico.math.cnrs.fr/category/62/ | https://indico.math.cnrs.fr/category/62/events.ics | — | — | — | — | — | — | — | 2 | discovered |
 | Physique | IHES | — | — | https://indico.math.cnrs.fr/category/63/ | https://indico.math.cnrs.fr/category/63/events.ics | — | — | — | — | — | — | — | 0 | discovered |
 | Séminaire de Mathématique | IHES | — | — | https://www.ihes.fr/en/events/ | — | — | — | — | — | — | — | — | 0 | discovered |
-| Séminaire de Mathématique | IHES | — | — | https://indico.math.cnrs.fr/category/72/ | https://indico.math.cnrs.fr/category/72/events.ics | — | — | — | — | — | — | — | 2 | discovered |
+| Séminaire de Mathématique | IHES | — | — | https://indico.math.cnrs.fr/category/72/ | https://indico.math.cnrs.fr/category/72/events.ics | — | — | — | — | — | — | — | 3 | discovered |
 | Séminaire de Physique Théorique | IHES | — | — | https://www.ihes.fr/en/events/ | — | — | — | — | — | — | — | — | 0 | discovered |
 | Séminaire de Physique Théorique | IHES | — | — | https://indico.math.cnrs.fr/category/71/ | https://indico.math.cnrs.fr/category/71/events.ics | — | — | — | — | — | — | — | 1 | discovered |
 | Séminaire Géométrie et groupes discrets | IHES | — | — | https://www.ihes.fr/en/events/ | — | — | — | — | — | — | — | — | 0 | discovered |
-| Séminaire Géométrie et groupes discrets | IHES | — | — | https://indico.math.cnrs.fr/category/240/ | https://indico.math.cnrs.fr/category/240/events.ics | — | — | — | — | — | — | — | 0 | discovered |
+| Séminaire Géométrie et groupes discrets | IHES | — | — | https://indico.math.cnrs.fr/category/240/ | https://indico.math.cnrs.fr/category/240/events.ics | — | — | — | — | — | — | — | 2 | discovered |
 | 2026-T3 Operator Algebras: Approximation, Rigidity and Dynamics | IHP | — | — | https://indico.math.cnrs.fr/category/784/ | https://indico.math.cnrs.fr/category/784/events.ics | — | — | — | — | — | — | — | 2 | discovered |
 | 2027-PC1 Anti-classification results in dynamical systems | IHP | — | — | https://indico.math.cnrs.fr/category/769/ | https://indico.math.cnrs.fr/category/769/events.ics | — | — | — | — | — | — | — | 1 | discovered |
 | 2027-T1 Kinetic theory: from long-range interactions to turbulence and quantum simulators | IHP | — | — | https://indico.math.cnrs.fr/category/807/ | https://indico.math.cnrs.fr/category/807/events.ics | — | — | — | — | — | — | — | 3 | discovered |
@@ -269,7 +269,7 @@ Recurrence, weekday, time and location are only filled when the **official page 
 | Séminaire sur les Algèbres Enveloppantes | IMJ-PRG | — | J.-Y. Charbonnel, R. Rentschler, M. Varagnolo | https://www.imj-prg.fr/gestion/evenement/affEvenement/2 | — | — | — | — | 175 rue du Chevaleret - 75013 Paris | — | — | — | 0 | discovered |
 | Séminaire sur les Algèbres Enveloppantes et Théorie des Représentations | IMJ-PRG | — | J.-Y. Charbonnel, R. Rentschler, M. Varagnolo | https://www.imj-prg.fr/gestion/evenement/affEvenement/3 | — | — | — | — | 175 rue du Chevaleret - 75013 Paris | — | — | — | 0 | discovered |
 | Séminaire sur les Singularités | IMJ-PRG | Géométrie et Dynamique | André BELOTTO, Hussein MOURTADA, Matteo RUGGIERO, Bernard TEISSIER | https://www.imj-prg.fr/gestion/evenement/affEvenement/61 | — | — | — | — | Sophie Germain, salle 1013 | — | — | geometry, dynamical-systems | 0 | discovered |
-| Séminaire Théorie des modèles et groupes | IMJ-PRG | Logique Mathématique | T. Ibarlucia, F. Oger, F. Point | https://www.imj-prg.fr/gestion/evenement/affEvenement/71 | — | — | Tuesday | 10:30 | Sophie Germain, 1013 | Tuesdays 10:30 (stated in the series description) — [source](https://www.imj-prg.fr/gestion/evenement/affEvenement/71) | yes | logic | 2 | discovered |
+| Séminaire Théorie des modèles et groupes | IMJ-PRG | Logique Mathématique | T. Ibarlucia, F. Oger, F. Point | https://www.imj-prg.fr/gestion/evenement/affEvenement/71 | — | — | Tuesday | 10:30 | Sophie Germain, 1013 | Tuesdays 10:30 (stated in the series description) — [source](https://www.imj-prg.fr/gestion/evenement/affEvenement/71) | yes | logic | 1 | discovered |
 | Séminaire Théorie des Nombres | IMJ-PRG | Formes Automorphes; Théorie des Nombres; Topologie et Géométrie Algébriques | Kęstutis Česnavičius, Marc Hindry, Wieslawa Nizioł, Cathy Swaenepoel | https://www.imj-prg.fr/gestion/evenement/affEvenement/82 | — | — | — | — | — | — | yes | number-theory, representation-theory | 1 | discovered |
 | Séminaire Variétés Rationnelles | IMJ-PRG | Topologie et Géométrie Algébriques | Cyril Demarche, Diego Izquierdo et Charles De Clercq | https://www.imj-prg.fr/gestion/evenement/affEvenement/81 | — | — | — | — | Campus Pierre et Marie Curie | — | — | — | 0 | discovered |
 | Séminaires : Autour des représentations galoisiennes | IMJ-PRG | — | Loïc Merel | https://www.imj-prg.fr/gestion/evenement/affEvenement/116 | — | — | — | — | Sophie Germain, 633 | — | — | — | 0 | discovered |
@@ -327,7 +327,7 @@ Recurrence, weekday, time and location are only filled when the **official page 
 | Feed | URL | Kind | Last status | Items | Note |
 |---|---|---|---|---|---|
 | The Abel Prize | https://abelprize.no/rss.xml | prize | ok | 10 | — |
-| arXiv listings (math.AT, math.GT, math.AG, math.CT, math.KT, math.QA, math.CO, math.DS) | https://rss.arxiv.org/rss/math.AT+math.GT+math.AG+math.CT+math.KT+math.QA+math.CO+math.DS | arxiv | ok | 110 | — |
+| arXiv listings (math.AT, math.GT, math.AG, math.CT, math.KT, math.QA, math.CO, math.DS) | https://rss.arxiv.org/rss/math.AT+math.GT+math.AG+math.CT+math.KT+math.QA+math.CO+math.DS | arxiv | ok | 244 | — |
 | CNRS Mathématiques (INSMI) | https://www.insmi.cnrs.fr/fr/rss.xml | institute | stale | 5 | Newest item 2022-09-16 — feed appears unmaintained |
 | IHES — Actualités | https://www.ihes.fr/feed/ | institute | ok | 10 | — |
 | Quanta Magazine — Mathematics | https://www.quantamagazine.org/mathematics/feed/ | news | ok | 5 | — |
