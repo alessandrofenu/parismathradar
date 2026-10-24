@@ -1,6 +1,6 @@
 # Source catalogue — Paris mathematical events
 
-_Generated on 2026-10-23T20:40:06Z (`npm run catalogue`)._
+_Generated on 2026-10-24T01:43:40Z (`npm run catalogue`)._
 
 Reliability scale: official event page / official calendar → **very high**; department page → **high**; mailing list → **medium/high**; third-party aggregator → **medium**.
 Status is the result of the last automatic check (`ok`, `warning`, `error`, `stale` = reachable but not updated, `blocked` = anti-bot wall, `manual` = monitored but not machine-extractable, `never_run`).
@@ -30,17 +30,17 @@ Status is the result of the last automatic check (`ok`, `warning`, `error`, `sta
 | Mailing list gdt.top.imj-prg (Groupe de travail — Topologie Algébrique) (`list-gdt-top`) | IMJ-PRG | https://listes.services.cnrs.fr/wws/info/gdt.top.imj-prg | — | mailing list (subscribe manually) | — | medium/high | manual | — | — |
 | Mailing list sem-top.paris (Paris topology seminars) (`list-sem-top`) | IMJ-PRG | https://listes.services.cnrs.fr/wws/info/sem-top.paris | — | mailing list (subscribe manually; archive not public) | — | medium/high | manual | — | Created for the IMJ-PRG topology seminar and 'open to all topology seminars of the Paris region'. Announcements for topology afternoons/special days circulate there. |
 | Institut de Mathématique d'Orsay — Séminaires et événements (`imo-orsay`) | IMO / LMO | https://www.imo.universite-paris-saclay.fr/fr/activites/les-evenements-de-limo/ | — | HTML scraping (list cards + event detail pages) | every 12 h | very high | ok | 33 | Orsay plateau: count ~1 h from central Paris. |
-| IRIF — Théorie des graphes (`irif-adg`) | IRIF | https://www.irif.fr/seminaires/adg/index | https://www.irif.fr/_media/ical/adg.ics | ICS | every 12 h | very high | error | 0 | — |
-| IRIF — Catégories supérieures, polygraphes et homotopie (`irif-cat`) | IRIF | https://www.irif.fr/seminaires/cat/index | https://www.irif.fr/_media/ical/cat.ics | ICS | every 12 h | very high | error | 0 | — |
-| IRIF — Combinatoire énumérative et analytique (`irif-combi`) | IRIF | https://www.irif.fr/seminaires/combi/index | https://www.irif.fr/_media/ical/combi.ics | ICS | every 12 h | very high | error | 0 | — |
-| IRIF — Graphes et Logique (`irif-gel`) | IRIF | https://www.irif.fr/seminaires/gel/index | https://www.irif.fr/_media/ical/gel.ics | ICS | every 12 h | very high | error | 0 | — |
-| IRIF — La théorie des types et la théorie de l'homotopie (`irif-hott`) | IRIF | https://www.irif.fr/seminaires/hott/index | https://www.irif.fr/_media/ical/hott.ics | ICS | every 12 h | very high | error | 0 | — |
-| IRIF — IRIF Distinguished Talks Series (`irif-irif`) | IRIF | https://www.irif.fr/seminaires/irif/index | https://www.irif.fr/_media/ical/irif.ics | ICS | every 12 h | very high | error | 0 | — |
-| IRIF — Logique, automates, algèbre et jeux (`irif-laag`) | IRIF | https://www.irif.fr/seminaires/laag/index | https://www.irif.fr/_media/ical/laag.ics | ICS | every 12 h | very high | error | 0 | — |
-| IRIF — Séminaire Formath (Formalized Mathematics) (`irif-picube`) | IRIF | https://www.irif.fr/seminaires/picube/index | https://www.irif.fr/_media/ical/picube.ics | ICS | every 12 h | very high | error | 2 | — |
-| IRIF — Sémantique (`irif-semantique`) | IRIF | https://www.irif.fr/seminaires/semantique/index | https://www.irif.fr/_media/ical/semantique.ics | ICS | every 12 h | very high | error | 0 | — |
-| IRIF — Topos pour la réalisabilité (`irif-topos`) | IRIF | https://www.irif.fr/seminaires/topos/index | https://www.irif.fr/_media/ical/topos.ics | ICS | every 12 h | very high | error | 0 | — |
-| IRIF — Théorie des types et son implémentation (`irif-types`) | IRIF | https://www.irif.fr/seminaires/types/index | https://www.irif.fr/_media/ical/types.ics | ICS | every 12 h | very high | error | 1 | — |
+| IRIF — Théorie des graphes (`irif-adg`) | IRIF | https://www.irif.fr/seminaires/adg/index | https://www.irif.fr/_media/ical/adg.ics | ICS | every 12 h | very high | ok | 0 | — |
+| IRIF — Catégories supérieures, polygraphes et homotopie (`irif-cat`) | IRIF | https://www.irif.fr/seminaires/cat/index | https://www.irif.fr/_media/ical/cat.ics | ICS | every 12 h | very high | ok | 0 | — |
+| IRIF — Combinatoire énumérative et analytique (`irif-combi`) | IRIF | https://www.irif.fr/seminaires/combi/index | https://www.irif.fr/_media/ical/combi.ics | ICS | every 12 h | very high | ok | 0 | — |
+| IRIF — Graphes et Logique (`irif-gel`) | IRIF | https://www.irif.fr/seminaires/gel/index | https://www.irif.fr/_media/ical/gel.ics | ICS | every 12 h | very high | stale | 0 | — |
+| IRIF — La théorie des types et la théorie de l'homotopie (`irif-hott`) | IRIF | https://www.irif.fr/seminaires/hott/index | https://www.irif.fr/_media/ical/hott.ics | ICS | every 12 h | very high | stale | 0 | — |
+| IRIF — IRIF Distinguished Talks Series (`irif-irif`) | IRIF | https://www.irif.fr/seminaires/irif/index | https://www.irif.fr/_media/ical/irif.ics | ICS | every 12 h | very high | ok | 0 | — |
+| IRIF — Logique, automates, algèbre et jeux (`irif-laag`) | IRIF | https://www.irif.fr/seminaires/laag/index | https://www.irif.fr/_media/ical/laag.ics | ICS | every 12 h | very high | stale | 0 | — |
+| IRIF — Séminaire Formath (Formalized Mathematics) (`irif-picube`) | IRIF | https://www.irif.fr/seminaires/picube/index | https://www.irif.fr/_media/ical/picube.ics | ICS | every 12 h | very high | ok | 2 | — |
+| IRIF — Sémantique (`irif-semantique`) | IRIF | https://www.irif.fr/seminaires/semantique/index | https://www.irif.fr/_media/ical/semantique.ics | ICS | every 12 h | very high | ok | 0 | — |
+| IRIF — Topos pour la réalisabilité (`irif-topos`) | IRIF | https://www.irif.fr/seminaires/topos/index | https://www.irif.fr/_media/ical/topos.ics | ICS | every 12 h | very high | ok | 0 | — |
+| IRIF — Théorie des types et son implémentation (`irif-types`) | IRIF | https://www.irif.fr/seminaires/types/index | https://www.irif.fr/_media/ical/types.ics | ICS | every 12 h | very high | ok | 1 | — |
 | Indico CNRS — Université Paris Nord (13) - LAGA (`indico-222`) | LAGA | https://indico.math.cnrs.fr/category/222/ | https://indico.math.cnrs.fr/category/222/events.ics | Indico HTTP export API (JSON) incl. sub-categories | every 6 h | very high | ok | 0 | Sub-category names are used as series names. |
 | LAGA — Séminaire de l'équipe Physique Mathématique & EDP (`laga-gtenl`) | LAGA | https://www.math.univ-paris13.fr/accueil/equipes/pm/seminaire-de-lequipe-pm/ | https://www.math.univ-paris13.fr/applications/seminaires/ical/gtenl.ics | HTML scraping of the seminar database listing (GET upcoming + POST current year) | every 12 h | very high | ok | 3 | The ICS and RSS links on the page exist but have not been regenerated since June 2023 — do not subscribe to them. Speaker homepages are linked by the source. |
 | LAGA — Séminaire de l'équipe Mathématiques pour la Biologie et les Images (`laga-mb`) | LAGA | https://www.math.univ-paris13.fr/accueil/equipes/mbi/seminaire-de-lequipe-mbi/ | https://www.math.univ-paris13.fr/applications/seminaires/ical/mb.ics | HTML scraping of the seminar database listing (GET upcoming + POST current year) | every 12 h | very high | ok | 3 | The ICS and RSS links on the page exist but have not been regenerated since June 2023 — do not subscribe to them. Speaker homepages are linked by the source. |
