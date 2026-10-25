@@ -1,6 +1,6 @@
 # Source catalogue — Paris mathematical events
 
-_Generated on 2026-10-25T09:57:29Z (`npm run catalogue`)._
+_Generated on 2026-10-25T15:04:57Z (`npm run catalogue`)._
 
 Reliability scale: official event page / official calendar → **very high**; department page → **high**; mailing list → **medium/high**; third-party aggregator → **medium**.
 Status is the result of the last automatic check (`ok`, `warning`, `error`, `stale` = reachable but not updated, `blocked` = anti-bot wall, `manual` = monitored but not machine-extractable, `never_run`).
@@ -15,7 +15,7 @@ Status is the result of the last automatic check (`ok`, `warning`, `error`, `sta
 | CEREMADE (Dauphine) — Séminaires (`ceremade-seminaires`) | CEREMADE | https://www.ceremade.dauphine.fr/fr/seminaires.html | — | manual (TYPO3 pages; 'cette semaine au labo' empty at check time) | probe daily | high | manual | 0 | Dauphine events on Indico (category 101) are ingested. |
 | Indico CNRS — Université Paris Dauphine (9) - CEREMADE (`indico-101`) | CEREMADE | https://indico.math.cnrs.fr/category/101/ | https://indico.math.cnrs.fr/category/101/events.ics | Indico HTTP export API (JSON) incl. sub-categories | every 6 h | very high | ok | 0 | Sub-category names are used as series names. |
 | Indico CNRS — CERMICS (`indico-773`) | CERMICS | https://indico.math.cnrs.fr/category/773/ | https://indico.math.cnrs.fr/category/773/events.ics | Indico HTTP export API (JSON) incl. sub-categories | every 6 h | very high | ok | 0 | Sub-category names are used as series names. |
-| CMLS (Polytechnique) — Séminaire de géométrie (`cmls-geometrie`) | CMLS | https://cmls.ip-paris.fr/recherche/geometrie-et-dynamique/seminaire-de-geometrie | — | manual (irregular free-text page) | probe daily | high | manual | 0 | Sessions are written as free prose with inconsistent date headers (e.g. a header dated 7 July announcing a session on 24 June); automatic extraction would risk wrong dates. |
+| CMLS (Polytechnique) — Séminaire de géométrie (`cmls-geometrie`) | CMLS | https://cmls.ip-paris.fr/recherche/geometrie-et-dynamique/seminaire-de-geometrie | — | manual (irregular free-text page) | probe daily | high | error | 0 | Sessions are written as free prose with inconsistent date headers (e.g. a header dated 7 July announcing a session on 24 June); automatic extraction would risk wrong dates. |
 | Indico CNRS — Conservatoire National des Arts et Métiers (`indico-22`) | Cnam | https://indico.math.cnrs.fr/category/22/ | https://indico.math.cnrs.fr/category/22/events.ics | Indico HTTP export API (JSON) incl. sub-categories | every 6 h | very high | ok | 0 | Sub-category names are used as series names. |
 | ENS DMA — events calendar (all seminars) (`ens-dma`) | ENS DMA | https://www.math.ens.psl.eu/la-recherche/seminaires/ | https://www.math.ens.psl.eu/evenements/?ical=1 | JSON REST API (WordPress The Events Calendar: /wp-json/tribe/events/v1/events) | every 6 h | very high | error | 15 | Structured categories = seminar series. Several ENS series listed as 'archives' publish nothing now. |
 | FSMP — Agenda & actualités (`fsmp-agenda`) | FSMP | https://www.sciencesmaths-paris.fr/fr/actualites | — | catalogued only | — | high | manual | — | Mostly programmes, calls and outreach (e.g. Horizon Maths). |
