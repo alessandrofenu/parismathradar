@@ -1,6 +1,6 @@
 # Source catalogue — Paris mathematical events
 
-_Generated on 2026-10-25T19:47:05Z (`npm run catalogue`)._
+_Generated on 2026-10-26T01:20:22Z (`npm run catalogue`)._
 
 Reliability scale: official event page / official calendar → **very high**; department page → **high**; mailing list → **medium/high**; third-party aggregator → **medium**.
 Status is the result of the last automatic check (`ok`, `warning`, `error`, `stale` = reachable but not updated, `blocked` = anti-bot wall, `manual` = monitored but not machine-extractable, `never_run`).
@@ -17,7 +17,7 @@ Status is the result of the last automatic check (`ok`, `warning`, `error`, `sta
 | Indico CNRS — CERMICS (`indico-773`) | CERMICS | https://indico.math.cnrs.fr/category/773/ | https://indico.math.cnrs.fr/category/773/events.ics | Indico HTTP export API (JSON) incl. sub-categories | every 6 h | very high | ok | 0 | Sub-category names are used as series names. |
 | CMLS (Polytechnique) — Séminaire de géométrie (`cmls-geometrie`) | CMLS | https://cmls.ip-paris.fr/recherche/geometrie-et-dynamique/seminaire-de-geometrie | — | manual (irregular free-text page) | probe daily | high | manual | 0 | Sessions are written as free prose with inconsistent date headers (e.g. a header dated 7 July announcing a session on 24 June); automatic extraction would risk wrong dates. |
 | Indico CNRS — Conservatoire National des Arts et Métiers (`indico-22`) | Cnam | https://indico.math.cnrs.fr/category/22/ | https://indico.math.cnrs.fr/category/22/events.ics | Indico HTTP export API (JSON) incl. sub-categories | every 6 h | very high | ok | 0 | Sub-category names are used as series names. |
-| ENS DMA — events calendar (all seminars) (`ens-dma`) | ENS DMA | https://www.math.ens.psl.eu/la-recherche/seminaires/ | https://www.math.ens.psl.eu/evenements/?ical=1 | JSON REST API (WordPress The Events Calendar: /wp-json/tribe/events/v1/events) | every 6 h | very high | error | 15 | Structured categories = seminar series. Several ENS series listed as 'archives' publish nothing now. |
+| ENS DMA — events calendar (all seminars) (`ens-dma`) | ENS DMA | https://www.math.ens.psl.eu/la-recherche/seminaires/ | https://www.math.ens.psl.eu/evenements/?ical=1 | JSON REST API (WordPress The Events Calendar: /wp-json/tribe/events/v1/events) | every 6 h | very high | ok | 12 | Structured categories = seminar series. Several ENS series listed as 'archives' publish nothing now. |
 | FSMP — Agenda & actualités (`fsmp-agenda`) | FSMP | https://www.sciencesmaths-paris.fr/fr/actualites | — | catalogued only | — | high | manual | — | Mostly programmes, calls and outreach (e.g. Horizon Maths). |
 | IHES — Events (seminars, cours, conferences) (`ihes-events`) | IHES | https://www.ihes.fr/en/events/ | https://indico.math.cnrs.fr/category/57/ | HTML scraping (event tables link to Indico) | every 12 h | very high | ok | 8 | Every row links to its Indico event, which makes deduplication exact. |
 | Indico CNRS — I.H.E.S (`indico-57`) | IHES | https://indico.math.cnrs.fr/category/57/ | https://indico.math.cnrs.fr/category/57/events.ics | Indico HTTP export API (JSON) incl. sub-categories | every 6 h | very high | ok | 11 | Sub-category names are used as series names. |
