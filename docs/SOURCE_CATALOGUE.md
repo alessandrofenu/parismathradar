@@ -1,6 +1,6 @@
 # Source catalogue — Paris mathematical events
 
-_Generated on 2026-10-26T17:30:00Z (`npm run catalogue`)._
+_Generated on 2026-10-27T02:12:19Z (`npm run catalogue`)._
 
 Reliability scale: official event page / official calendar → **very high**; department page → **high**; mailing list → **medium/high**; third-party aggregator → **medium**.
 Status is the result of the last automatic check (`ok`, `warning`, `error`, `stale` = reachable but not updated, `blocked` = anti-bot wall, `manual` = monitored but not machine-extractable, `never_run`).
@@ -29,7 +29,7 @@ Status is the result of the last automatic check (`ok`, `warning`, `error`, `sta
 | Indico CNRS — Institut de Mathématiques de Jussieu-Paris Rive Gauche, IMJ-PRG (`indico-237`) | IMJ-PRG | https://indico.math.cnrs.fr/category/237/ | https://indico.math.cnrs.fr/category/237/events.ics | Indico HTTP export API (JSON) incl. sub-categories | every 6 h | very high | ok | 0 | Sub-category names are used as series names. |
 | Mailing list gdt.top.imj-prg (Groupe de travail — Topologie Algébrique) (`list-gdt-top`) | IMJ-PRG | https://listes.services.cnrs.fr/wws/info/gdt.top.imj-prg | — | mailing list (subscribe manually) | — | medium/high | manual | — | — |
 | Mailing list sem-top.paris (Paris topology seminars) (`list-sem-top`) | IMJ-PRG | https://listes.services.cnrs.fr/wws/info/sem-top.paris | — | mailing list (subscribe manually; archive not public) | — | medium/high | manual | — | Created for the IMJ-PRG topology seminar and 'open to all topology seminars of the Paris region'. Announcements for topology afternoons/special days circulate there. |
-| Institut de Mathématique d'Orsay — Séminaires et événements (`imo-orsay`) | IMO / LMO | https://www.imo.universite-paris-saclay.fr/fr/activites/les-evenements-de-limo/ | — | HTML scraping (list cards + event detail pages) | every 12 h | very high | ok | 32 | Orsay plateau: count ~1 h from central Paris. |
+| Institut de Mathématique d'Orsay — Séminaires et événements (`imo-orsay`) | IMO / LMO | https://www.imo.universite-paris-saclay.fr/fr/activites/les-evenements-de-limo/ | — | HTML scraping (list cards + event detail pages) | every 12 h | very high | ok | 33 | Orsay plateau: count ~1 h from central Paris. |
 | IRIF — Théorie des graphes (`irif-adg`) | IRIF | https://www.irif.fr/seminaires/adg/index | https://www.irif.fr/_media/ical/adg.ics | ICS | every 12 h | very high | ok | 0 | — |
 | IRIF — Catégories supérieures, polygraphes et homotopie (`irif-cat`) | IRIF | https://www.irif.fr/seminaires/cat/index | https://www.irif.fr/_media/ical/cat.ics | ICS | every 12 h | very high | ok | 0 | — |
 | IRIF — Combinatoire énumérative et analytique (`irif-combi`) | IRIF | https://www.irif.fr/seminaires/combi/index | https://www.irif.fr/_media/ical/combi.ics | ICS | every 12 h | very high | ok | 0 | — |
@@ -278,7 +278,7 @@ Recurrence, weekday, time and location are only filled when the **official page 
 | Séminaire Analyse Harmonique (Orsay) | IMO / LMO | — | — | https://www.imo.universite-paris-saclay.fr/fr/activites/les-evenements-de-limo/ | — | — | — | — | — | — | — | — | 3 | discovered |
 | Séminaire Analyse Numérique et EDP (Orsay) | IMO / LMO | — | — | https://www.imo.universite-paris-saclay.fr/fr/activites/les-evenements-de-limo/ | — | — | — | — | — | — | — | — | 4 | discovered |
 | Séminaire Arithmétique et Géométrie Algébrique (Orsay) | IMO / LMO | — | — | https://www.imo.universite-paris-saclay.fr/fr/activites/les-evenements-de-limo/ | — | — | — | — | — | — | — | — | 5 | discovered |
-| Séminaire Datashape (Orsay) | IMO / LMO | — | — | https://www.imo.universite-paris-saclay.fr/fr/activites/les-evenements-de-limo/ | — | — | — | — | — | — | — | — | 5 | discovered |
+| Séminaire Datashape (Orsay) | IMO / LMO | — | — | https://www.imo.universite-paris-saclay.fr/fr/activites/les-evenements-de-limo/ | — | — | — | — | — | — | — | — | 6 | discovered |
 | Séminaire Géométrie Topologie Dynamique (Orsay) | IMO / LMO | — | — | https://www.imo.universite-paris-saclay.fr/fr/activites/les-evenements-de-limo/ | — | — | — | — | — | — | — | — | 2 | discovered |
 | Séminaire motivique (Orsay) | IMO / LMO | — | — | https://www.imo.universite-paris-saclay.fr/fr/activites/les-evenements-de-limo/ | — | — | — | — | — | — | — | — | 0 | discovered |
 | Séminaire Probabilités et Statistiques (Orsay) | IMO / LMO | — | — | https://www.imo.universite-paris-saclay.fr/fr/activites/les-evenements-de-limo/ | — | — | — | — | — | — | — | — | 0 | discovered |
