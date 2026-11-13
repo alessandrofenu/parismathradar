@@ -1,6 +1,6 @@
 # Source catalogue — Paris mathematical events
 
-_Generated on 2026-11-13T03:31:03Z (`npm run catalogue`)._
+_Generated on 2026-11-13T13:15:57Z (`npm run catalogue`)._
 
 Reliability scale: official event page / official calendar → **very high**; department page → **high**; mailing list → **medium/high**; third-party aggregator → **medium**.
 Status is the result of the last automatic check (`ok`, `warning`, `error`, `stale` = reachable but not updated, `blocked` = anti-bot wall, `manual` = monitored but not machine-extractable, `never_run`).
@@ -165,8 +165,8 @@ Recurrence, weekday, time and location are only filled when the **official page 
 | Séminaire Parisien d'Optimisation | IHP | — | — | https://sites.google.com/site/spoihp/ | — | — | Monday | — | Institut Henri Poincaré | Monthly, Mondays (as listed by IHP) — [source](https://www.ihp.fr/fr/seminaires-recurrents-et-groupes-de-travail) | — | applied | 0 | discovered |
 | Séminaire Parisien de Statistique | IHP | — | — | http://sites.google.com/site/semstats/home | — | — | Monday | — | Institut Henri Poincaré | Monthly, Mondays (as listed by IHP) — [source](https://www.ihp.fr/fr/seminaires-recurrents-et-groupes-de-travail) | — | probability, applied | 0 | discovered |
 | Séminaire Parisien de Théorie des Jeux | IHP | — | — | http://sites.google.com/view/seminairetheoriedesjeux/ | — | — | Monday | — | Institut Henri Poincaré | Weekly, Mondays (as listed by IHP) — [source](https://www.ihp.fr/fr/seminaires-recurrents-et-groupes-de-travail) | — | applied | 0 | discovered |
-| Séminaire Parisien sur les fondements mathématiques de l’IA | IHP | — | — | https://www.ihp.fr/fr/seminaires-recurrents-et-groupes-de-travail | — | — | Friday | — | Institut Henri Poincaré | Twice a month, Fridays (as listed by IHP) — [source](https://www.ihp.fr/fr/seminaires-recurrents-et-groupes-de-travail) | — | applied | 5 | discovered |
-| Séminaire Parisien sur les fondements mathématiques de l’IA | IHP | — | — | https://indico.math.cnrs.fr/category/836/ | https://indico.math.cnrs.fr/category/836/events.ics | — | — | — | — | — | — | — | 4 | discovered |
+| Séminaire Parisien sur les fondements mathématiques de l’IA | IHP | — | — | https://www.ihp.fr/fr/seminaires-recurrents-et-groupes-de-travail | — | — | Friday | — | Institut Henri Poincaré | Twice a month, Fridays (as listed by IHP) — [source](https://www.ihp.fr/fr/seminaires-recurrents-et-groupes-de-travail) | — | applied | 3 | discovered |
+| Séminaire Parisien sur les fondements mathématiques de l’IA | IHP | — | — | https://indico.math.cnrs.fr/category/836/ | https://indico.math.cnrs.fr/category/836/events.ics | — | — | — | — | — | — | — | 3 | discovered |
 | Séminaire Problèmes spectraux en physique mathématique | IHP | — | — | https://www.math.u-psud.fr/~nonnenma/tournant/seminairetournant.html | — | — | Monday | — | Institut Henri Poincaré | Monthly, Mondays (as listed by IHP) — [source](https://www.ihp.fr/fr/seminaires-recurrents-et-groupes-de-travail) | — | mathematical-physics | 0 | discovered |
 | Séminaire Seed de mathématiques et de physique | IHP | — | — | https://indico.math.cnrs.fr/category/680/ | — | — | Wednesday | — | Institut Henri Poincaré | Quarterly, Wednesdays (as listed by IHP) — [source](https://www.ihp.fr/fr/seminaires-recurrents-et-groupes-de-travail) | — | — | 0 | discovered |
 | Séminaire SPIKE | IHP | — | — | https://www.ihp.fr/fr/seminaires-recurrents-et-groupes-de-travail | — | — | — | — | — | — | — | — | 0 | discovered |
@@ -233,7 +233,7 @@ Recurrence, weekday, time and location are only filled when the **official page 
 | Séminaire Claude Chevalley | IMJ-PRG | — | O. Brunat, M. Cabanes, et O. Dudas. | https://www.imj-prg.fr/gestion/evenement/affEvenement/5 | — | — | — | — | 11 rue Pierre et Marie Curie - 75005 Paris | — | — | — | 0 | discovered |
 | Séminaire Cohomologie équivariante et Quantification géométrique | IMJ-PRG | — | — | https://www.imj-prg.fr/gestion/evenement/affEvenement/14 | — | — | — | — | — | — | — | — | 0 | discovered |
 | Séminaire Colloquium Géométrie et Dynamique | IMJ-PRG | Géométrie et Dynamique | Y. Martinez-Maure, R. Petrides, M. Ruggiero, A. Zorich | https://www.imj-prg.fr/gestion/evenement/affEvenement/90 | — | — | — | — | — | — | — | geometry, dynamical-systems | 0 | discovered |
-| Séminaire Combinatoire, Optimisation, et Interactions | IMJ-PRG | Combinatoire et Optimisation | Jérémie Bouttier, Marco Mazzola, Sofia Tarricone | https://www.imj-prg.fr/gestion/evenement/affEvenement/111 | — | — | — | — | Campus Pierre et Marie Curie, 15.16-413 | — | — | combinatorics | 1 | discovered |
+| Séminaire Combinatoire, Optimisation, et Interactions | IMJ-PRG | Combinatoire et Optimisation | Jérémie Bouttier, Marco Mazzola, Sofia Tarricone | https://www.imj-prg.fr/gestion/evenement/affEvenement/111 | — | — | — | — | Campus Pierre et Marie Curie, 15.16-413 | — | — | combinatorics | 0 | discovered |
 | Séminaire d'Algèbre | IMJ-PRG | Groupes, Représentations et Géométrie | J. Alev, D. Hernandez, B. Keller, Th. Levasseur, et S. Morier-Genoud. | https://www.imj-prg.fr/gestion/evenement/affEvenement/1 | — | — | — | — | Info sur https://researchseminars.org/seminar/paris-algebra-seminar | — | yes | representation-theory, group-theory | 5 | discovered |
 | Séminaire d'Algèbres d'Opérateurs | IMJ-PRG | Algèbres d'Opérateurs | Matthieu Joseph, Omar Mohsen | https://www.imj-prg.fr/gestion/evenement/affEvenement/74 | — | — | — | — | Sophie Germain, 1013 | — | yes | operator-algebras | 2 | discovered |
 | Séminaire d'Analyse et Géométrie | IMJ-PRG | — | O. Biquard, I. Itenberg, S. Shen, T.-D. Tô | https://www.imj-prg.fr/gestion/evenement/affEvenement/56 | — | — | — | — | Jussieu, 15–25.502 | — | yes | — | 2 | discovered |
@@ -334,7 +334,7 @@ Recurrence, weekday, time and location are only filled when the **official page 
 | Feed | URL | Kind | Last status | Items | Note |
 |---|---|---|---|---|---|
 | The Abel Prize | https://abelprize.no/rss.xml | prize | ok | 10 | — |
-| arXiv listings (math.AT, math.GT, math.AG, math.CT, math.KT, math.QA, math.CO, math.DS) | https://rss.arxiv.org/rss/math.AT+math.GT+math.AG+math.CT+math.KT+math.QA+math.CO+math.DS | arxiv | warning | 0 | No new/cross-listed entries (weekend or holiday listing?) |
+| arXiv listings (math.AT, math.GT, math.AG, math.CT, math.KT, math.QA, math.CO, math.DS) | https://rss.arxiv.org/rss/math.AT+math.GT+math.AG+math.CT+math.KT+math.QA+math.CO+math.DS | arxiv | ok | 240 | — |
 | CNRS Mathématiques (INSMI) | https://www.insmi.cnrs.fr/fr/rss.xml | institute | stale | 5 | Newest item 2022-09-16 — feed appears unmaintained |
 | IHES — Actualités | https://www.ihes.fr/feed/ | institute | ok | 10 | — |
 | Quanta Magazine — Mathematics | https://www.quantamagazine.org/mathematics/feed/ | news | ok | 5 | — |
