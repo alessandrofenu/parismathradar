@@ -1,6 +1,6 @@
 # Source catalogue — Paris mathematical events
 
-_Generated on 2026-11-14T12:19:49Z (`npm run catalogue`)._
+_Generated on 2026-11-14T21:37:18Z (`npm run catalogue`)._
 
 Reliability scale: official event page / official calendar → **very high**; department page → **high**; mailing list → **medium/high**; third-party aggregator → **medium**.
 Status is the result of the last automatic check (`ok`, `warning`, `error`, `stale` = reachable but not updated, `blocked` = anti-bot wall, `manual` = monitored but not machine-extractable, `never_run`).
@@ -107,7 +107,7 @@ Recurrence, weekday, time and location are only filled when the **official page 
 | CTOP (Convexité, Transport Optimal et Probabilités) | IHP | — | — | https://indico.math.cnrs.fr/category/589/ | https://indico.math.cnrs.fr/category/589/events.ics | — | — | — | — | — | — | — | 5 | discovered |
 | Derived Seminar | IHP | — | — | https://www.ihp.fr/fr/seminaires-recurrents-et-groupes-de-travail | — | — | — | — | — | — | — | — | 0 | discovered |
 | Derived Seminar | IHP | — | — | https://indico.math.cnrs.fr/category/808/ | https://indico.math.cnrs.fr/category/808/events.ics | — | — | — | — | — | — | — | 8 | discovered |
-| Équations différentielles motiviques et au–delà | IHP | — | — | https://www.ihp.fr/fr/seminaires-recurrents-et-groupes-de-travail | — | — | Friday | — | Institut Henri Poincaré | Twice a month, Fridays (as listed by IHP) — [source](https://www.ihp.fr/fr/seminaires-recurrents-et-groupes-de-travail) | — | — | 0 | discovered |
+| Équations différentielles motiviques et au–delà | IHP | — | — | https://indico.math.cnrs.fr/category/603/ | — | — | Friday | — | Institut Henri Poincaré | Twice a month, Fridays (as listed by IHP) — [source](https://www.ihp.fr/fr/seminaires-recurrents-et-groupes-de-travail) | — | — | 0 | discovered |
 | Équations différentielles motiviques et au–delà | IHP | — | — | https://indico.math.cnrs.fr/category/603/ | https://indico.math.cnrs.fr/category/603/events.ics | — | — | — | — | — | — | — | 0 | discovered |
 | Groupe de travail "Courbure, transport optimal et probabilités (C-TOP)" | IHP | — | — | https://lama.u-pem.fr/evenements/seminaire/groupe_de_travail_convexite_transport_optimal_et_probabilites_ctop | — | — | Thursday | — | Institut Henri Poincaré | Monthly, Thursdays (as listed by IHP) — [source](https://www.ihp.fr/fr/seminaires-recurrents-et-groupes-de-travail) | — | probability | 0 | discovered |
 | Groupe de travail "Interuniversitaire en Algèbre (GTIA)" | IHP | — | — | http://www.math.univ-paris13.fr/~rigal/GT.html | — | — | Monday | — | Institut Henri Poincaré | Monthly, Mondays (as listed by IHP) — [source](https://www.ihp.fr/fr/seminaires-recurrents-et-groupes-de-travail) | — | algebra | 0 | discovered |
