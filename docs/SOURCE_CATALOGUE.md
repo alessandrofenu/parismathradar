@@ -1,6 +1,6 @@
 # Source catalogue — Paris mathematical events
 
-_Generated on 2026-11-22T13:29:28Z (`npm run catalogue`)._
+_Generated on 2026-11-22T22:33:51Z (`npm run catalogue`)._
 
 Reliability scale: official event page / official calendar → **very high**; department page → **high**; mailing list → **medium/high**; third-party aggregator → **medium**.
 Status is the result of the last automatic check (`ok`, `warning`, `error`, `stale` = reachable but not updated, `blocked` = anti-bot wall, `manual` = monitored but not machine-extractable, `never_run`).
@@ -133,7 +133,7 @@ Recurrence, weekday, time and location are only filled when the **official page 
 | Séminaire Automath | IHP | — | — | https://www.ihp.fr/fr/seminaires-recurrents-et-groupes-de-travail | — | — | — | — | — | — | — | — | 2 | discovered |
 | Séminaire Automath | IHP | — | — | https://indico.math.cnrs.fr/category/840/ | https://indico.math.cnrs.fr/category/840/events.ics | — | — | — | — | — | — | — | 3 | discovered |
 | Séminaire Bachelier Paris | IHP | — | — | http://www.bachelier-paris.fr/ | — | — | Friday | — | Institut Henri Poincaré | Weekly, Fridays (as listed by IHP) — [source](https://www.ihp.fr/fr/seminaires-recurrents-et-groupes-de-travail) | — | applied | 0 | discovered |
-| Séminaire Bourbaki | IHP | — | — | https://www.ihp.fr/fr/seminaires-recurrents-et-groupes-de-travail | — | — | Saturday | — | Institut Henri Poincaré | Quarterly, Saturdays (as listed by IHP) — [source](https://www.ihp.fr/fr/seminaires-recurrents-et-groupes-de-travail) | — | general | 0 | discovered |
+| Séminaire Bourbaki | IHP | — | — | https://www.bourbaki.fr/ | — | — | Saturday | — | Institut Henri Poincaré | Quarterly, Saturdays (as listed by IHP) — [source](https://www.ihp.fr/fr/seminaires-recurrents-et-groupes-de-travail) | — | general | 0 | discovered |
 | Séminaire Bourbaki | IHP | — | — | https://indico.math.cnrs.fr/category/338/ | https://indico.math.cnrs.fr/category/338/events.ics | — | — | — | — | — | — | — | 0 | discovered |
 | Séminaire Bourbaki du vendredi | IHP | — | — | https://www.bourbaki.fr/ | — | — | Friday | — | Institut Henri Poincaré | Quarterly, Fridays (as listed by IHP) — [source](https://www.ihp.fr/fr/seminaires-recurrents-et-groupes-de-travail) | — | general | 0 | discovered |
 | Séminaire Bourbaki du vendredi | IHP | — | — | https://indico.math.cnrs.fr/category/339/ | https://indico.math.cnrs.fr/category/339/events.ics | — | — | — | — | — | — | — | 0 | discovered |
@@ -280,7 +280,7 @@ Recurrence, weekday, time and location are only filled when the **official page 
 | Séminaire sur les Algèbres Enveloppantes et Théorie des Représentations | IMJ-PRG | — | J.-Y. Charbonnel, R. Rentschler, M. Varagnolo | https://www.imj-prg.fr/gestion/evenement/affEvenement/3 | — | — | — | — | 175 rue du Chevaleret - 75013 Paris | — | — | — | 0 | discovered |
 | Séminaire sur les Singularités | IMJ-PRG | Géométrie et Dynamique | André BELOTTO, Hussein MOURTADA, Matteo RUGGIERO, Bernard TEISSIER | https://www.imj-prg.fr/gestion/evenement/affEvenement/61 | — | — | — | — | Sophie Germain, salle 1013 | — | — | geometry, dynamical-systems | 0 | discovered |
 | Séminaire Théorie des modèles et groupes | IMJ-PRG | Logique Mathématique | T. Ibarlucia, F. Oger, F. Point | https://www.imj-prg.fr/gestion/evenement/affEvenement/71 | — | — | Tuesday | 10:30 | Sophie Germain, 1013 | Tuesdays 10:30 (stated in the series description) — [source](https://www.imj-prg.fr/gestion/evenement/affEvenement/71) | yes | logic | 0 | discovered |
-| Séminaire Théorie des Nombres | IMJ-PRG | Formes Automorphes; Théorie des Nombres; Topologie et Géométrie Algébriques | Kęstutis Česnavičius, Marc Hindry, Wieslawa Nizioł, Cathy Swaenepoel | https://www.imj-prg.fr/gestion/evenement/affEvenement/82 | — | — | — | — | — | — | yes | number-theory, representation-theory | 1 | discovered |
+| Séminaire Théorie des Nombres | IMJ-PRG | Formes Automorphes; Théorie des Nombres; Topologie et Géométrie Algébriques | Kęstutis Česnavičius, Marc Hindry, Wieslawa Nizioł, Cathy Swaenepoel | https://www.imj-prg.fr/gestion/evenement/affEvenement/82 | — | — | — | — | — | — | yes | number-theory, representation-theory | 3 | discovered |
 | Séminaire Variétés Rationnelles | IMJ-PRG | Topologie et Géométrie Algébriques | Cyril Demarche, Diego Izquierdo et Charles De Clercq | https://www.imj-prg.fr/gestion/evenement/affEvenement/81 | — | — | — | — | Campus Pierre et Marie Curie | — | — | — | 0 | discovered |
 | Séminaires : Autour des représentations galoisiennes | IMJ-PRG | — | Loïc Merel | https://www.imj-prg.fr/gestion/evenement/affEvenement/116 | — | — | — | — | Sophie Germain, 633 | — | — | — | 0 | discovered |
 | Soutenances | IMJ-PRG | — | — | https://www.imj-prg.fr/gestion/evenement/affEvenement/86 | — | — | — | — | — | — | — | — | 0 | discovered |
